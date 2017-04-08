@@ -23,7 +23,7 @@ namespace PokerTournament
         int currentBetPot; // amount of money currently being bet and is in pot
         int numRaise = 0; //number of times raised during a phase;
         States stateRound1, stateRound2;
-
+        bool[] shouldDiscard;
         #endregion
 
         public Player7(int idNum, string name, int money) : base(idNum, name, money)
@@ -36,6 +36,19 @@ namespace PokerTournament
             maxBet = 0;
             stateRound1 = 0;
             stateRound2 = 0;
+            shouldDiscard = new bool[5];
+            //Hard coded table values
+            maxRaisesTable.Add(1, new int[] { 1, 1 });
+            maxRaisesTable.Add(2, new int[] { 2, 2 });
+            maxRaisesTable.Add(3, new int[] { 3, 3 });
+            maxRaisesTable.Add(4, new int[] { 4, 4 });
+            maxRaisesTable.Add(5, new int[] { 5, 5 });
+            maxRaisesTable.Add(6, new int[] { 6, 6 });
+            maxRaisesTable.Add(7, new int[] { 70, 7 });
+            maxRaisesTable.Add(8, new int[] { 800, 8 });
+            maxRaisesTable.Add(9, new int[] { 9000, 9 });
+            maxRaisesTable.Add(10, new int[] { 10000, 10 });
+            bettingRangeTable.Add(1, new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 });
         }
 
         #region Custom Methods
@@ -45,16 +58,16 @@ namespace PokerTournament
             // May implement more later if necessary
         }
 
-        private PlayerAction BTCheck(States currentState)
+        private PlayerAction BTCheck(string actionPhase, States currentState)
         {
             if(rank >= 2) // May change to 3 if one pair isn't good enough?
             {
                 // First player
                 if (!this.Dealer)
-                    return BTBet(currentState);
+                    return BTBet(actionPhase, currentState);
                 // Second player
                 else
-                    return BTRaiseCall(currentState);
+                    return BTRaiseCall(actionPhase, currentState);
             }
             else
             {
@@ -62,13 +75,13 @@ namespace PokerTournament
                 if (!this.Dealer)
                 {
                     // FIGURE OUT WHAT STATE WE'RE GOING TO GO TO!!!!!!!! //
-                    return new PlayerAction(this.Name, "Bet1", "check", 0);
+                    return new PlayerAction(this.Name, actionPhase, "check", 0);
                 }
                 // Second player but first checked
-                else if (actions[actions.Count].ActionName == "check")
+                else if (this.actions[actions.Count - 1].ActionName == "check")
                 {
                     stateRound1 = States.Evaluate; //Go back since the round is gonna end
-                    return new PlayerAction(this.Name, "Bet1", "check", 0);
+                    return new PlayerAction(this.Name, actionPhase, "check", 0);
                 }
                 // Second player and first didn't check
                 else
@@ -77,12 +90,12 @@ namespace PokerTournament
                     if (ShouldFold())
                     {
                         stateRound1 = States.Evaluate; //Go back since the round is gonna end
-                        return new PlayerAction(this.Name, "Bet1", "fold", 0);
+                        return new PlayerAction(this.Name, actionPhase, "fold", 0);
                     }
                     else
                     {
                         currentState = States.RaiseCall;
-                        BTRaiseCall("Bet1",currentState);
+                        BTRaiseCall(actionPhase, currentState);
                     }
                 }
             }
@@ -91,7 +104,7 @@ namespace PokerTournament
             return new PlayerAction(this.Name, "<STUFF>", "<OTHER STUFF>", -1);
         }
 
-        private PlayerAction BTBet(States currentState)
+        private PlayerAction BTBet(string actionPhase, States currentState)
         {
             // CHECK TO SEE IF YOU SHOULD FOLD
 
@@ -99,10 +112,10 @@ namespace PokerTournament
             return new PlayerAction(this.Name, "<STUFF>", "<OTHER STUFF>", -1);
         }
 
-        private PlayerAction BTRaiseCall( PlayerAction prevAction ,string actionPhase, States currentState)
+        private PlayerAction BTRaiseCall(string actionPhase, States currentState)
         {
             // DON'T FORGET TO UPDATE STATE
-            if(prevAction.ActionName == "raised" && currentBetPot > maxBet) //check if other opponent raised.
+            if(this.actions[actions.Count-1].ActionName == "raised" && currentBetPot > maxBet) //check if other opponent raised.
             {
                  return new PlayerAction(this.Name, actionPhase, "fold", 0);
             }
@@ -120,12 +133,12 @@ namespace PokerTournament
                     else //no raises left
                     {
                         //call
-                        return new PlayerAction(this.Name, actionPhase, "call", prevAction.Amount);
+                        return new PlayerAction(this.Name, actionPhase, "call", this.actions[actions.Count - 1].Amount);
                     }
                 }
                 else
                 {
-                    return new PlayerAction(this.Name, actionPhase, "call", prevAction.Amount);
+                    return new PlayerAction(this.Name, actionPhase, "call", this.actions[actions.Count - 1].Amount);
                 }
             }
 
@@ -134,7 +147,6 @@ namespace PokerTournament
 
         private bool ShouldFold()
         {
-            // Do this!
             // If you have rank of 1, all 4 suits, or distant numbers
             if (rank == 1)
             {
@@ -142,25 +154,26 @@ namespace PokerTournament
                 int sameSuitNum = 0;
                 for (int i = 0; i < hand.Length; i++)
                 {
-                    for (int j = 0; i < hand.Length; j++)
+                    for (int j = i + 1; i < hand.Length; j++)
                     {
-                        if (i != j)
-                        {
-                            if (hand[i].Suit == hand[0].Suit)    // all cards compare with the first card
+                        //if (i != j)
+                        //{
+                            if (hand[i].Suit == hand[j].Suit)    // all cards compare with the first card
                             {
                                 sameSuitNum++;  // if this num less  then 2 then there will be 4 suils 
                             }
-                        }
+                        //}
                     }
 
                 }
                 bool badStraight = false;
+                int goodStraight = 0;
                 int numEach = 0;    // compare two cards value
                 int numAll = 0;     // add up all the different between values when not fold 
                 for (int i = 0; i < hand.Length - 1; i++)
                 {
                     numEach = hand[i + 1].Value - hand[i].Value;
-                    if (numEach > 2) // the distance between cards are too big
+                    if (numEach > 2 && i != 0 && i != hand.Length-1) // the distance between cards are too big
                     {
                         badStraight = true;
                         break;
@@ -168,13 +181,29 @@ namespace PokerTournament
                     else
                     {
                         numAll += numEach;  // to check the total gap amount
+                        if (numEach == 1)
+                        {
+                            ++goodStraight;
+                            shouldDiscard[i] = shouldDiscard[i + 1] = false;
+                        }
                     }
                 }
+                if (goodStraight == 3)
+                {
+                    badStraight = false;  //One away from a straight!
+                    // Choose which card to discard
+                    if (hand[hand.Length].Value - hand[hand.Length - 1].Value > 2) 
+                        shouldDiscard[hand.Length] = true;
+                    else
+                        shouldDiscard[0] = true;
+                }
+                    //THINK ABOUT LATER -- SUITS... WHICH SHOULD WE TRY FOR?
+                /*
                 if (numAll > 2)
                 {
                     badStraight = true; // at least two gap between cards number                   
                 }
-
+                */
                 if (badStraight == true && sameSuitNum <= 2)
                 {
                     return true;  // REALLY BAD TO HAVE NO CLOSE STRAIGHT AND SAME SUIT
@@ -196,6 +225,8 @@ namespace PokerTournament
         private void CalculateSafetyAndMaxBet()
         {
             // Do stuff!
+            safety = 0;
+            maxBet = 0;
         }
         #endregion
 
@@ -215,13 +246,13 @@ namespace PokerTournament
                         stateRound1 = States.Check;
                         break;
                     case States.Check:
-                        BTCheck(stateRound1);
+                        BTCheck("Bet1", stateRound1);
                         break;
                     case States.Bet:
-                        BTBet(stateRound1);
+                        BTBet("Bet1", stateRound1);
                         break;
                     case States.RaiseCall:
-                        BTRaiseCall(stateRound1);
+                        BTRaiseCall("Bet1", stateRound1);
                         break;
                 }
             }
@@ -236,25 +267,74 @@ namespace PokerTournament
                 {
                     case States.Evaluate:
                         AnalyzeHand();
+                        ListTheHand(this.hand);//DEBUG--REMOVE LATER//
                         CalculateSafetyAndMaxBet();
                         stateRound2 = States.Bet;
                         break;
                     case States.Bet:
-                        BTBet(stateRound2);
+                        BTBet("Bet2", stateRound2);
                         break;
                     case States.RaiseCall:
-                        BTRaiseCall(stateRound2);
+                        BTRaiseCall("Bet2", stateRound2);
                         break;
                 }
             }
         }
 
+        /// <summary>
+        /// DEBUG - DLETE THIS LATER
+        /// </summary>
+        private void ListTheHand(Card[] hand)
+        {
+            // evaluate the hand
+            Card highCard = null;
+            int rank = Evaluate.RateAHand(hand, out highCard);
+
+            // list your hand
+            Console.WriteLine("\nName: " + Name + " Your hand:   Rank: " + rank);
+            for (int i = 0; i < hand.Length; i++)
+            {
+                Console.Write(hand[i].ToString() + " ");
+            }
+            Console.WriteLine();
+        }
+
         public override PlayerAction Draw(Card[] hand)
         {
+            ListTheHand(this.hand);//DEBUG--REMOVE LATER//
             // Consider high card / 1 pair case
             // Consult table to find cards to discard
             // Return basically nothing if none of those go through
-            return new PlayerAction(this.Name, "<STUFF>", "<OTHER STUFF>", -1);
+            switch (rank)
+            {
+                case 1://HIGH CARD ONLY
+                    for (int i = 0; i < 5; ++i)
+                        hand[i] = null;
+                    return new PlayerAction(Name, "Draw", "draw", 4);
+                case 2://ONE PAIR
+                    for(int i=0; i<6; ++i)
+                    {
+                        if (hand[i].Value == highCard.Value)
+                            hand[i] = null;
+                    }
+                    return new PlayerAction(Name, "Draw", "draw", 3);
+                case 3://TWO PAIR
+                    for (int i = 0; i < 6; ++i)
+                    {
+                        if (hand[i].Value != hand[i + 1].Value)
+                        {
+                            if (i > 0 && hand[i].Value != hand[i - 1].Value)
+                            {
+                                hand[i] = null;
+                                break;
+                            }
+                        }
+                    }
+                    return new PlayerAction(Name, "Draw", "draw", 1);
+                    //THINK ABOUT THREE OF A KIND, FOUR, ETC
+                default: //OTHER THINGS...
+                    return new PlayerAction(Name, "Draw", "stand pat", 0);
+            }
         }
         #endregion
     }

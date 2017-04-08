@@ -28,3 +28,9 @@ D:\AI\PokerTournament v4\PokerTournament\obj\Debug\PokerTournament.pdb
 D:\Documents\GitHub\PokerTournament\PokerTournament v4\PokerTournament\bin\Debug\PokerTournament.exe.config
 D:\Documents\GitHub\PokerTournament\PokerTournament v4\PokerTournament\obj\Debug\PokerTournament.exe
 D:\Documents\GitHub\PokerTournament\PokerTournament v4\PokerTournament\obj\Debug\PokerTournament.pdb
+D:\Profiles\axw1698\OneDrive\PokerTournament\PokerTournament v4\PokerTournament\bin\Debug\PokerTournament.exe.config
+D:\Profiles\axw1698\OneDrive\PokerTournament\PokerTournament v4\PokerTournament\obj\Debug\PokerTournament.exe
+D:\Profiles\axw1698\OneDrive\PokerTournament\PokerTournament v4\PokerTournament\obj\Debug\PokerTournament.pdb
+D:\Profiles\axw1698\OneDrive\PokerTournament\PokerTournament v4\PokerTournament\bin\Debug\PokerTournament.exe
+D:\Profiles\axw1698\OneDrive\PokerTournament\PokerTournament v4\PokerTournament\bin\Debug\PokerTournament.pdb
+D:\Profiles\axw1698\OneDrive\PokerTournament\PokerTournament v4\PokerTournament\obj\Debug\PokerTournament.csprojResolveAssemblyReference.cache
