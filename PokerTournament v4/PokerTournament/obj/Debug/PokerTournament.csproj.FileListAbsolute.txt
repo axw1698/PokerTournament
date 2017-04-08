@@ -25,3 +25,6 @@ C:\Game AI Online\Projects\Project3\PokerTournament v4\PokerTournament\obj\Debug
 D:\AI\PokerTournament v4\PokerTournament\bin\Debug\PokerTournament.exe.config
 D:\AI\PokerTournament v4\PokerTournament\obj\Debug\PokerTournament.exe
 D:\AI\PokerTournament v4\PokerTournament\obj\Debug\PokerTournament.pdb
+D:\Documents\GitHub\PokerTournament\PokerTournament v4\PokerTournament\bin\Debug\PokerTournament.exe.config
+D:\Documents\GitHub\PokerTournament\PokerTournament v4\PokerTournament\obj\Debug\PokerTournament.exe
+D:\Documents\GitHub\PokerTournament\PokerTournament v4\PokerTournament\obj\Debug\PokerTournament.pdb

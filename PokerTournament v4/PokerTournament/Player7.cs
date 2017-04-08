@@ -14,19 +14,22 @@ namespace PokerTournament
         List<PlayerAction> actions;
         Card[] hand;
         Dictionary<int, int[]> bettingRangeTable;
-        Dictionary<int, int> maxRaisesTable;
+        Dictionary<int, int[]> maxRaisesTable; // raise table should hold 1. num of raise based on rank and amount to raise by
         Dictionary<int, int> cardsToDiscardTable;
         Card highCard;
         int rank;
         int safety;
         int maxBet;
+        int currentBetPot; // amount of money currently being bet and is in pot
+        int numRaise = 0; //number of times raised during a phase;
         States stateRound1, stateRound2;
+
         #endregion
 
         public Player7(int idNum, string name, int money) : base(idNum, name, money)
         {
             bettingRangeTable = new Dictionary<int, int[]>();
-            maxRaisesTable = new Dictionary<int, int>();
+            maxRaisesTable = new Dictionary<int, int[]>();
             cardsToDiscardTable = new Dictionary<int, int>();
             rank = 0;
             safety = 0;
@@ -79,7 +82,7 @@ namespace PokerTournament
                     else
                     {
                         currentState = States.RaiseCall;
-                        BTRaiseCall(currentState);
+                        BTRaiseCall("Bet1",currentState);
                     }
                 }
             }
@@ -96,10 +99,37 @@ namespace PokerTournament
             return new PlayerAction(this.Name, "<STUFF>", "<OTHER STUFF>", -1);
         }
 
-        private PlayerAction BTRaiseCall(States currentState)
+        private PlayerAction BTRaiseCall( PlayerAction prevAction ,string actionPhase, States currentState)
         {
             // DON'T FORGET TO UPDATE STATE
-            return new PlayerAction(this.Name, "<STUFF>", "<OTHER STUFF>", -1);
+            if(prevAction.ActionName == "raised" && currentBetPot > maxBet) //check if other opponent raised.
+            {
+                 return new PlayerAction(this.Name, actionPhase, "fold", 0);
+            }
+            else
+            {
+                if(Money > safety)
+                {
+                    //consult the raise table
+                    //If there are raisesLeft then raise based on table
+                    if((maxRaisesTable[rank])[0] > numRaise)
+                    {
+                        //you have raise left so Raise based on table
+                        return new PlayerAction(this.Name, actionPhase, "raise", (maxRaisesTable[rank])[1]);
+                    }
+                    else //no raises left
+                    {
+                        //call
+                        return new PlayerAction(this.Name, actionPhase, "call", prevAction.Amount);
+                    }
+                }
+                else
+                {
+                    return new PlayerAction(this.Name, actionPhase, "call", prevAction.Amount);
+                }
+            }
+
+            
         }
 
         private bool ShouldFold()
