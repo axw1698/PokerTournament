@@ -34,3 +34,9 @@ D:\Profiles\axw1698\OneDrive\PokerTournament\PokerTournament v4\PokerTournament\
 D:\Profiles\axw1698\OneDrive\PokerTournament\PokerTournament v4\PokerTournament\bin\Debug\PokerTournament.exe
 D:\Profiles\axw1698\OneDrive\PokerTournament\PokerTournament v4\PokerTournament\bin\Debug\PokerTournament.pdb
 D:\Profiles\axw1698\OneDrive\PokerTournament\PokerTournament v4\PokerTournament\obj\Debug\PokerTournament.csprojResolveAssemblyReference.cache
+D:\Data Documents\[HOMEWORK]\AI\PokerTournament\PokerTournament v4\PokerTournament\bin\Debug\PokerTournament.exe.config
+D:\Data Documents\[HOMEWORK]\AI\PokerTournament\PokerTournament v4\PokerTournament\bin\Debug\PokerTournament.exe
+D:\Data Documents\[HOMEWORK]\AI\PokerTournament\PokerTournament v4\PokerTournament\bin\Debug\PokerTournament.pdb
+D:\Data Documents\[HOMEWORK]\AI\PokerTournament\PokerTournament v4\PokerTournament\obj\Debug\PokerTournament.csprojResolveAssemblyReference.cache
+D:\Data Documents\[HOMEWORK]\AI\PokerTournament\PokerTournament v4\PokerTournament\obj\Debug\PokerTournament.exe
+D:\Data Documents\[HOMEWORK]\AI\PokerTournament\PokerTournament v4\PokerTournament\obj\Debug\PokerTournament.pdb

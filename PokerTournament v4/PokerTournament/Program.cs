@@ -31,7 +31,7 @@ namespace PokerTournament
             Human h0 = new Human(0, "Joe", 1000);
             Human h1 = new Human(1, "Sue", 1000);
 
-            Player7 p7 = new Player7(0, "Frank", 1000);
+            Player7 p7 = new Player7(0, "George", 1000);
 
             // create the Game
             Game myGame = new Game(p7, h1);

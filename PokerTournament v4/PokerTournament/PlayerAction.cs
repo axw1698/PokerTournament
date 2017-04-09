@@ -18,6 +18,10 @@ namespace PokerTournament
         private int amount; // amount bet or raised if Bet1 or Bet2, number cards in Draw
 
         // constructor
+        /// <param name="nm">this.Name</param>
+        /// <param name="ap">"Bet1", "Bet2", or "Draw"</param>
+        /// <param name="an">In Bet1/Bet2: "bet","check","raise","fold","call" . . . In Draw: "stand pat","draw"</param>
+        /// <param name="amt">Amount bet/raised in Bet1/Bet2, number of cards in Draw</param>
         public PlayerAction(string nm,string ap, string an, int amt)
         {
             name = nm;

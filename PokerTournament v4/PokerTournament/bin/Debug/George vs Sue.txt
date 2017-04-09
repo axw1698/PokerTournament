@@ -1,0 +1,18 @@
+Starting round 1
+Ante for this round: 10
+Betting round 1:
+Player: Sue Action Phase: Bet1 Action Name: bet Amount: 12
+ 
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 32
+ 
+George folded. Other player gets the pot of 32
+
+After round 1, player status: 
+ Name: George Dealer: True Money: 990
+ Name: Sue Dealer: False Money: 1010
+ 
+Starting round 2
+Ante for this round: 10
+Betting round 1:

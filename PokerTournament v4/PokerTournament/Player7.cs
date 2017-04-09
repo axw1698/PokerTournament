@@ -14,14 +14,16 @@ namespace PokerTournament
         string playerName;
         List<PlayerAction> actions;
         Card[] hand;
-        Dictionary<int, int[]> bettingRangeTable;
+        //Dictionary<int, int[]> bettingRangeTable;
         Dictionary<int, int[]> maxRaisesTable; // raise table should hold 1. num of raise based on rank and amount to raise by
-        Dictionary<int, int> cardsToDiscardTable;
+        int[,] bettingRangeTable;
+        //Dictionary<int, int> cardsToDiscardTable; //Don't need?
         Card highCard;
         int rank;
         int safety;
         int maxBet;
         int currentBetPot; // amount of money currently being bet and is in pot   *************************
+        int startMoney;
         int numRaise = 0; //number of times raised during a phase;
         States stateRound1, stateRound2;
         bool[] shouldDiscard;
@@ -30,15 +32,29 @@ namespace PokerTournament
         public Player7(int idNum, string name, int money) : base(idNum, name, money)
         {
             playerName = name;
-            bettingRangeTable = new Dictionary<int, int[]>();
+            //bettingRangeTable = new Dictionary<int, int[]>();
             maxRaisesTable = new Dictionary<int, int[]>();
-            cardsToDiscardTable = new Dictionary<int, int>();
+            bettingRangeTable = new int[,]
+            {
+                { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
+                { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
+                { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
+                { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
+                { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
+                { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
+                { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
+                { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
+                { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
+                { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 }
+            };
+            //cardsToDiscardTable = new Dictionary<int, int>();
             rank = 0;
             safety = 0;
             maxBet = 0;
             stateRound1 = 0;            // why zero
             stateRound2 = 0;
             shouldDiscard = new bool[5];
+            startMoney = this.Money;
             //Hard coded table values
             maxRaisesTable.Add(1, new int[] { 1, 1 });
             maxRaisesTable.Add(2, new int[] { 2, 2 });
@@ -50,7 +66,18 @@ namespace PokerTournament
             maxRaisesTable.Add(8, new int[] { 800, 8 });
             maxRaisesTable.Add(9, new int[] { 9000, 9 });
             maxRaisesTable.Add(10, new int[] { 10000, 10 });
+            /*
             bettingRangeTable.Add(1, new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 });
+            bettingRangeTable.Add(2, new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 });
+            bettingRangeTable.Add(3, new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 });
+            bettingRangeTable.Add(4, new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 });
+            bettingRangeTable.Add(5, new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 });
+            bettingRangeTable.Add(6, new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 });
+            bettingRangeTable.Add(7, new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 });
+            bettingRangeTable.Add(8, new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 });
+            bettingRangeTable.Add(9, new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 });
+            bettingRangeTable.Add(10, new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 });
+            */
         }
 
         #region Custom Methods
@@ -121,8 +148,6 @@ namespace PokerTournament
 
             stateRound1 = States.Evaluate;
             Console.WriteLine(playerName + " chose the action: <STUFF> (Not Coded yet)");
-
-            // DON'T FORGET TO UPDATE STATE
             return new PlayerAction(this.Name, "<STUFF>", "<OTHER STUFF>", -1);
         }
 
@@ -136,22 +161,19 @@ namespace PokerTournament
             }
             else
             {
-                // DON'T FORGET TO UPDATE STATE
-
-
-                stateRound1 = States.Evaluate;
-                Console.WriteLine(playerName + " chose the action: <STUFF> (Not Coded yet)");
-
-                return new PlayerAction(this.Name, "<STUFF>", "<OTHER STUFF>", -1);
+                // Update state
+                stateRound1 = States.RaiseCall;
+                // Bet according to table
+                Console.WriteLine(playerName + " chose the action: Bet");
+                return new PlayerAction(this.Name, actionPhase, "bet", bettingRangeTable[rank - 1, this.highCard.Value - 2]); // -1 and -2 to compensate for array indices
             }
         }
 
         private PlayerAction BTRaiseCall(string actionPhase, States currentState)
         {
-            // DON'T FORGET TO UPDATE STATE
             if(this.actions[actions.Count-1].ActionName == "raised" && currentBetPot > maxBet) //check if other opponent raised.
             {
-
+                // Update state
                 stateRound1 = States.Evaluate;
                 Console.WriteLine(playerName + " chose the action:Fold (Opponent raised too high)");
 
@@ -198,9 +220,9 @@ namespace PokerTournament
             {
                 // Evaluate the amount of suits in five cards
                 int sameSuitNum = 0;
-                for (int i = 0; i < hand.Length; i++)
+                for (int i = 0; i < 4; i++)
                 {
-                    for (int j = i + 1; i < hand.Length; j++)
+                    for (int j = i + 1; j < 5; j++)
                     {
                         //if (i != j)
                         //{
@@ -273,9 +295,14 @@ namespace PokerTournament
 
         private void CalculateSafetyAndMaxBet()
         {
-            // Do stuff!
-            safety = 0;
-            maxBet = 0;
+            // Safety is a percentage of how much money you have... if you have more than 10% of starting money
+            if (this.Money > (startMoney / 10))
+                safety = (int)(this.Money * 0.35f);
+            else safety = 0; // If you barely have any money left, just go for broke
+
+            // Max bet is the most amount of money you'll bet before giving up
+            // Proportional to the amount of money you have, and on your hand's rank
+            maxBet = (rank / 10) * this.Money;
         }
         #endregion
 
@@ -298,14 +325,11 @@ namespace PokerTournament
                         stateRound1 = States.Check;
                         break;
                     case States.Check:
-                        BTCheck("Bet1", stateRound1);
-                        break;
+                        return BTCheck("Bet1", stateRound1);
                     case States.Bet:
-                        BTBet("Bet1", stateRound1);
-                        break;
+                        return BTBet("Bet1", stateRound1);
                     case States.RaiseCall:
-                        BTRaiseCall("Bet1", stateRound1);
-                        break;
+                        return BTRaiseCall("Bet1", stateRound1);
                 }
             }
         }
@@ -324,11 +348,9 @@ namespace PokerTournament
                         stateRound2 = States.Bet;
                         break;
                     case States.Bet:
-                        BTBet("Bet2", stateRound2);
-                        break;
+                        return BTBet("Bet2", stateRound2);
                     case States.RaiseCall:
-                        BTRaiseCall("Bet2", stateRound2);
-                        break;
+                        return BTRaiseCall("Bet2", stateRound2);
                 }
             }
         }
@@ -353,7 +375,7 @@ namespace PokerTournament
 
         public override PlayerAction Draw(Card[] hand)
         {
-            int[] cardDelete;
+            //int[] cardDelete;
             ListTheHand(this.hand);//DEBUG--REMOVE LATER//
             // Consider high card / 1 pair case
             // Consult table to find cards to discard
@@ -361,43 +383,43 @@ namespace PokerTournament
             switch (rank)
             {
                 case 1://HIGH CARD ONLY     // add more later
-                    cardDelete = new int[4];
+                    //cardDelete = new int[4];
                     for (int i = 0; i < 5; ++i)
                     {
                         hand[i] = null;
-                        cardDelete[i] = i+1;
+                        //cardDelete[i] = i+1;
                     }
 
-                    Console.WriteLine(playerName + "Delete 4 cards"+cardDelete[0]+ ","+ cardDelete[1]+ ","+ cardDelete[2]+ ","+ cardDelete[3]);
+                    //Console.WriteLine(playerName + "Delete 4 cards"+cardDelete[0]+ ","+ cardDelete[1]+ ","+ cardDelete[2]+ ","+ cardDelete[3]);
                     return new PlayerAction(Name, "Draw", "draw", 4);
                 case 2://ONE PAIR
-                    cardDelete = new int[3];
+                    //cardDelete = new int[3];
                     for (int i = 0; i < 6; ++i)
                     {
-                        if (hand[i].Value == highCard.Value)
+                        if (hand[i].Value != hand[i + 1].Value)
                         {
                             hand[i] = null;
-                            cardDelete[i] = i + 1;
+                            //cardDelete[i] = i + 1;
                         }
                     }
 
-                    Console.WriteLine(playerName + "Delete 3 cards" + cardDelete[0] + "," + cardDelete[1] + "," + cardDelete[2]);
+                    //Console.WriteLine(playerName + "Delete 3 cards" + cardDelete[0] + "," + cardDelete[1] + "," + cardDelete[2]);
                     return new PlayerAction(Name, "Draw", "draw", 3);
                 case 3://TWO PAIR
-                    cardDelete = new int[2];
-                    for (int i = 0; i < 6; ++i)
+                    //cardDelete = new int[2];
+                    for (int i = 0; i < 5; ++i)
                     {
                         if (hand[i].Value != hand[i + 1].Value)
                         {
                             if (i > 0 && hand[i].Value != hand[i - 1].Value)
                             {
                                 hand[i] = null;
-                                cardDelete[i] = i + 1;
+                                //cardDelete[i] = i + 1;
                                 break;
                             }
                         }
                     }
-                    Console.WriteLine(playerName + "Delete 2 cards" + cardDelete[0] + "," + cardDelete[1]);
+                    //Console.WriteLine(playerName + "Delete 2 cards" + cardDelete[0] + "," + cardDelete[1]);
 
                     return new PlayerAction(Name, "Draw", "draw", 1);
                     //THINK ABOUT THREE OF A KIND, FOUR, ETC
