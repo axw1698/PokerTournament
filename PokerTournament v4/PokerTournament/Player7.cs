@@ -11,6 +11,7 @@ namespace PokerTournament
         private enum States { Evaluate, Check, Bet, Fold, RaiseCall }
 
         #region Variables
+        string playerName;
         List<PlayerAction> actions;
         Card[] hand;
         Dictionary<int, int[]> bettingRangeTable;
@@ -20,7 +21,7 @@ namespace PokerTournament
         int rank;
         int safety;
         int maxBet;
-        int currentBetPot; // amount of money currently being bet and is in pot
+        int currentBetPot; // amount of money currently being bet and is in pot   *************************
         int numRaise = 0; //number of times raised during a phase;
         States stateRound1, stateRound2;
         bool[] shouldDiscard;
@@ -28,13 +29,14 @@ namespace PokerTournament
 
         public Player7(int idNum, string name, int money) : base(idNum, name, money)
         {
+            playerName = name;
             bettingRangeTable = new Dictionary<int, int[]>();
             maxRaisesTable = new Dictionary<int, int[]>();
             cardsToDiscardTable = new Dictionary<int, int>();
             rank = 0;
             safety = 0;
             maxBet = 0;
-            stateRound1 = 0;
+            stateRound1 = 0;            // why zero
             stateRound2 = 0;
             shouldDiscard = new bool[5];
             //Hard coded table values
@@ -75,12 +77,28 @@ namespace PokerTournament
                 if (!this.Dealer)
                 {
                     // FIGURE OUT WHAT STATE WE'RE GOING TO GO TO!!!!!!!! //
+
+
+
+
+
+
+
+                    Console.WriteLine(playerName + " chose the action: Check (First Player)");
+
                     return new PlayerAction(this.Name, actionPhase, "check", 0);
                 }
                 // Second player but first checked
                 else if (this.actions[actions.Count - 1].ActionName == "check")
                 {
                     stateRound1 = States.Evaluate; //Go back since the round is gonna end
+                    // We should decided rather we should check or not 
+
+
+
+
+                    Console.WriteLine(playerName + " chose the action: Check (Second Player)");
+
                     return new PlayerAction(this.Name, actionPhase, "check", 0);
                 }
                 // Second player and first didn't check
@@ -100,6 +118,10 @@ namespace PokerTournament
                 }
             }
 
+
+            stateRound1 = States.Evaluate;
+            Console.WriteLine(playerName + " chose the action: <STUFF> (Not Coded yet)");
+
             // DON'T FORGET TO UPDATE STATE
             return new PlayerAction(this.Name, "<STUFF>", "<OTHER STUFF>", -1);
         }
@@ -115,6 +137,11 @@ namespace PokerTournament
             else
             {
                 // DON'T FORGET TO UPDATE STATE
+
+
+                stateRound1 = States.Evaluate;
+                Console.WriteLine(playerName + " chose the action: <STUFF> (Not Coded yet)");
+
                 return new PlayerAction(this.Name, "<STUFF>", "<OTHER STUFF>", -1);
             }
         }
@@ -124,7 +151,11 @@ namespace PokerTournament
             // DON'T FORGET TO UPDATE STATE
             if(this.actions[actions.Count-1].ActionName == "raised" && currentBetPot > maxBet) //check if other opponent raised.
             {
-                 return new PlayerAction(this.Name, actionPhase, "fold", 0);
+
+                stateRound1 = States.Evaluate;
+                Console.WriteLine(playerName + " chose the action:Fold (Opponent raised too high)");
+
+                return new PlayerAction(this.Name, actionPhase, "fold", 0);
             }
             else
             {
@@ -135,16 +166,24 @@ namespace PokerTournament
                     if((maxRaisesTable[rank])[0] > numRaise)
                     {
                         //you have raise left so Raise based on table
+
+
+                        stateRound1 = States.Evaluate;
+                        Console.WriteLine(playerName + " chose the action: Raise " + numRaise);
                         return new PlayerAction(this.Name, actionPhase, "raise", (maxRaisesTable[rank])[1]);
                     }
                     else //no raises left
                     {
                         //call
+                        stateRound1 = States.Evaluate;
+                        Console.WriteLine(playerName + " chose the action: Call");
                         return new PlayerAction(this.Name, actionPhase, "call", this.actions[actions.Count - 1].Amount);
                     }
                 }
                 else
                 {
+                    stateRound1 = States.Evaluate;
+                    Console.WriteLine(playerName + " chose the action: Call");
                     return new PlayerAction(this.Name, actionPhase, "call", this.actions[actions.Count - 1].Amount);
                 }
             }
@@ -213,12 +252,15 @@ namespace PokerTournament
                 */
                 if (badStraight == true && sameSuitNum <= 2)
                 {
+                    Console.WriteLine(playerName + " chose the action: Fold (Really bad hand)");
                     return true;  // REALLY BAD TO HAVE NO CLOSE STRAIGHT AND SAME SUIT
                 }
 
                 // If the maxbet is bigger then safety 
                 if (maxBet > safety)
                 {
+                    Console.WriteLine(playerName + " chose the action: Fold (Max Bet is bigger then safety");
+
                     return true; // Might need to add more later
                 }
                 return false;
@@ -240,6 +282,9 @@ namespace PokerTournament
         #region Abstract Overrides
         public override PlayerAction BettingRound1(List<PlayerAction> actions, Card[] hand)
         {
+            // list the hand
+            ListTheHand(hand);
+
             this.actions = actions;
             this.hand = hand;
             stateRound2 = States.Evaluate;
@@ -308,24 +353,38 @@ namespace PokerTournament
 
         public override PlayerAction Draw(Card[] hand)
         {
+            int[] cardDelete;
             ListTheHand(this.hand);//DEBUG--REMOVE LATER//
             // Consider high card / 1 pair case
             // Consult table to find cards to discard
             // Return basically nothing if none of those go through
             switch (rank)
             {
-                case 1://HIGH CARD ONLY
+                case 1://HIGH CARD ONLY     // add more later
+                    cardDelete = new int[4];
                     for (int i = 0; i < 5; ++i)
+                    {
                         hand[i] = null;
+                        cardDelete[i] = i+1;
+                    }
+
+                    Console.WriteLine(playerName + "Delete 4 cards"+cardDelete[0]+ ","+ cardDelete[1]+ ","+ cardDelete[2]+ ","+ cardDelete[3]);
                     return new PlayerAction(Name, "Draw", "draw", 4);
                 case 2://ONE PAIR
-                    for(int i=0; i<6; ++i)
+                    cardDelete = new int[3];
+                    for (int i = 0; i < 6; ++i)
                     {
                         if (hand[i].Value == highCard.Value)
+                        {
                             hand[i] = null;
+                            cardDelete[i] = i + 1;
+                        }
                     }
+
+                    Console.WriteLine(playerName + "Delete 3 cards" + cardDelete[0] + "," + cardDelete[1] + "," + cardDelete[2]);
                     return new PlayerAction(Name, "Draw", "draw", 3);
                 case 3://TWO PAIR
+                    cardDelete = new int[2];
                     for (int i = 0; i < 6; ++i)
                     {
                         if (hand[i].Value != hand[i + 1].Value)
@@ -333,13 +392,17 @@ namespace PokerTournament
                             if (i > 0 && hand[i].Value != hand[i - 1].Value)
                             {
                                 hand[i] = null;
+                                cardDelete[i] = i + 1;
                                 break;
                             }
                         }
                     }
+                    Console.WriteLine(playerName + "Delete 2 cards" + cardDelete[0] + "," + cardDelete[1]);
+
                     return new PlayerAction(Name, "Draw", "draw", 1);
                     //THINK ABOUT THREE OF A KIND, FOUR, ETC
                 default: //OTHER THINGS...
+                    Console.WriteLine(playerName + "Delete 0 cards");
                     return new PlayerAction(Name, "Draw", "stand pat", 0);
             }
         }
