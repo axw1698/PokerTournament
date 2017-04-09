@@ -1,15 +1,11 @@
 Starting round 1
 Ante for this round: 10
 Betting round 1:
-Player: Sue Action Phase: Bet1 Action Name: bet Amount: 12
+Player: Sue Action Phase: Bet1 Action Name: bet Amount: 10
  
-Player: Joe Action Phase: Bet1 Action Name: bet Amount: 32
- 
-Player: Sue Action Phase: Bet1 Action Name: bet Amount: 1
- 
-Player: Joe Action Phase: Bet1 Action Name: bet Amount: 21
+Player: Joe Action Phase: Bet1 Action Name: raise Amount: 2
  
 Player: Sue Action Phase: Bet1 Action Name: call Amount: 0
  
-After Bet1, pot is 107
+After Bet1, pot is 44
  

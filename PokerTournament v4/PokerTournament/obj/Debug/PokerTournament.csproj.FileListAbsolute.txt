@@ -40,3 +40,6 @@ D:\Data Documents\[HOMEWORK]\AI\PokerTournament\PokerTournament v4\PokerTourname
 D:\Data Documents\[HOMEWORK]\AI\PokerTournament\PokerTournament v4\PokerTournament\obj\Debug\PokerTournament.csprojResolveAssemblyReference.cache
 D:\Data Documents\[HOMEWORK]\AI\PokerTournament\PokerTournament v4\PokerTournament\obj\Debug\PokerTournament.exe
 D:\Data Documents\[HOMEWORK]\AI\PokerTournament\PokerTournament v4\PokerTournament\obj\Debug\PokerTournament.pdb
+D:\Documents\GitHub\PokerTournament\PokerTournament v4\PokerTournament\bin\Debug\PokerTournament.exe
+D:\Documents\GitHub\PokerTournament\PokerTournament v4\PokerTournament\bin\Debug\PokerTournament.pdb
+D:\Documents\GitHub\PokerTournament\PokerTournament v4\PokerTournament\obj\Debug\PokerTournament.csprojResolveAssemblyReference.cache
