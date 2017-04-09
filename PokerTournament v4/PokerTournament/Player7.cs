@@ -118,7 +118,7 @@ namespace PokerTournament
                 // Second player but first checked
                 else if (this.actions[actions.Count - 1].ActionName == "check")
                 {
-                    stateRound1 = States.Evaluate; //Go back since the round is gonna end
+                    currentState = States.Evaluate; //Go back since the round is gonna end
                     // We should decided rather we should check or not 
 
 
@@ -134,21 +134,16 @@ namespace PokerTournament
                     //Check to see if you should fold, or if you can keep playing
                     if (ShouldFold())
                     {
-                        stateRound1 = States.Evaluate; //Go back since the round is gonna end
+                        currentState = States.Evaluate; //Go back since the round is gonna end
                         return new PlayerAction(this.Name, actionPhase, "fold", 0);
                     }
                     else
                     {
                         currentState = States.RaiseCall;
-                        BTRaiseCall(actionPhase, currentState);
+                        return BTRaiseCall(actionPhase, currentState);
                     }
                 }
             }
-
-
-            stateRound1 = States.Evaluate;
-            Console.WriteLine(playerName + " chose the action: <STUFF> (Not Coded yet)");
-            return new PlayerAction(this.Name, "<STUFF>", "<OTHER STUFF>", -1);
         }
 
         private PlayerAction BTBet(string actionPhase, States currentState)
@@ -156,13 +151,24 @@ namespace PokerTournament
             // CHECK TO SEE IF YOU SHOULD FOLD
             if (ShouldFold())
             {
-                stateRound1 = States.Evaluate; //Go back since the round is gonna end
+                //Go back since the round is gonna end
+                /*
+                if (actionPhase == "Bet1")
+                    stateRound1 = States.Evaluate;
+                if (actionPhase == "Bet2")
+                    stateRound2 = States.Evaluate;*/
+                currentState = States.Evaluate;
                 return new PlayerAction(this.Name, actionPhase, "fold", 0);
             }
             else
             {
                 // Update state
-                stateRound1 = States.RaiseCall;
+                /*
+                if (actionPhase == "Bet1")
+                    stateRound1 = States.RaiseCall;
+                if (actionPhase == "Bet2")
+                    stateRound2 = States.RaiseCall;*/
+                currentState = States.RaiseCall;
                 // Bet according to table
                 Console.WriteLine(playerName + " chose the action: Bet");
                 return new PlayerAction(this.Name, actionPhase, "bet", bettingRangeTable[rank - 1, this.highCard.Value - 2]); // -1 and -2 to compensate for array indices
@@ -171,40 +177,35 @@ namespace PokerTournament
 
         private PlayerAction BTRaiseCall(string actionPhase, States currentState)
         {
+            //will return to fold logic after this logic
+            currentState = States.Fold;
+
             if(this.actions[actions.Count-1].ActionName == "raised" && currentBetPot > maxBet) //check if other opponent raised.
             {
-                // Update state
-                stateRound1 = States.Evaluate;
                 Console.WriteLine(playerName + " chose the action:Fold (Opponent raised too high)");
-
                 return new PlayerAction(this.Name, actionPhase, "fold", 0);
             }
             else
             {
-                if(Money > safety)
+                if(this.Money > safety)
                 {
                     //consult the raise table
                     //If there are raisesLeft then raise based on table
                     if((maxRaisesTable[rank])[0] > numRaise)
                     {
                         //you have raise left so Raise based on table
-
-
-                        stateRound1 = States.Evaluate;
                         Console.WriteLine(playerName + " chose the action: Raise " + numRaise);
                         return new PlayerAction(this.Name, actionPhase, "raise", (maxRaisesTable[rank])[1]);
                     }
                     else //no raises left
                     {
                         //call
-                        stateRound1 = States.Evaluate;
                         Console.WriteLine(playerName + " chose the action: Call");
                         return new PlayerAction(this.Name, actionPhase, "call", this.actions[actions.Count - 1].Amount);
                     }
                 }
                 else
                 {
-                    stateRound1 = States.Evaluate;
                     Console.WriteLine(playerName + " chose the action: Call");
                     return new PlayerAction(this.Name, actionPhase, "call", this.actions[actions.Count - 1].Amount);
                 }
@@ -315,14 +316,27 @@ namespace PokerTournament
             this.actions = actions;
             this.hand = hand;
             stateRound2 = States.Evaluate;
+
             while (true) //Professor, I'm sorry
             {
+                ////////////////////////////////////////////////////////
+                //      CONTINUE HERE!!!!!!!!!!!!!!!!!              ////
+                ////////////////////////////////////////////////////////
+
+                //if (this.actions[actions.Count].ActionName == "bet" || this.actions[actions.Count].ActionName == "raise") 
+                //currentBetPot+=this.actions
                 switch (stateRound1)
                 {
                     case States.Evaluate:
                         AnalyzeHand();
                         CalculateSafetyAndMaxBet();
                         stateRound1 = States.Check;
+                        break;
+                    case States.Fold:
+                        if (ShouldFold())
+                            return new PlayerAction(this.Name, "Bet1", "fold", 0);
+                        else
+                            stateRound1 = States.RaiseCall;
                         break;
                     case States.Check:
                         return BTCheck("Bet1", stateRound1);
@@ -339,7 +353,7 @@ namespace PokerTournament
             stateRound1 = States.Evaluate;
             while (true)
             {
-                switch (stateRound1)
+                switch (stateRound2)
                 {
                     case States.Evaluate:
                         AnalyzeHand();
@@ -394,7 +408,7 @@ namespace PokerTournament
                     return new PlayerAction(Name, "Draw", "draw", 4);
                 case 2://ONE PAIR
                     //cardDelete = new int[3];
-                    for (int i = 0; i < 6; ++i)
+                    for (int i = 0; i < 4; ++i)
                     {
                         if (hand[i].Value != hand[i + 1].Value)
                         {

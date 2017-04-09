@@ -1,0 +1,43 @@
+Starting round 1
+Ante for this round: 10
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: bet Amount: 11
+ 
+Player: Joe Action Phase: Bet1 Action Name: bet Amount: 12
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: bet Amount: 11
+ 
+Player: Joe Action Phase: Bet1 Action Name: call Amount: 0
+ 
+After Bet1, pot is 65
+ 
+Name: Jimmy
+Hand Rank: 1 
+Two of Spades Six of Spades Nine of Clubs Jack of Spades King of Diamonds 
+
+ 
+Name: Joe
+Hand Rank: 2 
+Four of Clubs Five of Hearts Seven of Clubs Ace of Diamonds Ace of Clubs 
+
+ 
+Betting round 2:
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 13
+ 
+Player: Joe Action Phase: Bet2 Action Name: raise Amount: 2
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 13
+ 
+Player: Joe Action Phase: Bet2 Action Name: call Amount: 0
+ 
+After Bet2, pot is 119
+ 
+Joe has a better hand and wins 119
+
+After round 1, player status: 
+ Name: Joe Dealer: True Money: 1058
+ Name: Jimmy Dealer: False Money: 942
+ 
+Starting round 2
+Ante for this round: 10
+Betting round 1:

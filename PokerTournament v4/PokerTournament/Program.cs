@@ -31,10 +31,11 @@ namespace PokerTournament
             Human h0 = new Human(0, "Joe", 1000);
             Human h1 = new Human(1, "Sue", 1000);
 
-            Player7 p7 = new Player7(0, "George", 1000);
+            Player7 p7a = new Player7(0, "George", 1000);
+            Player7 p7b = new Player7(1, "Jimmy", 1000);
 
             // create the Game
-            Game myGame = new Game(p7, h1);
+            Game myGame = new Game(p7a, p7b);
 
             myGame.Tournament(); // run the game
         }
