@@ -14,10 +14,8 @@ namespace PokerTournament
         string playerName;
         List<PlayerAction> actions;
         Card[] hand;
-        //Dictionary<int, int[]> bettingRangeTable;
         Dictionary<int, int[]> maxRaisesTable; // raise table should hold 1. num of raise based on rank and amount to raise by
-        int[,] bettingRangeTable;
-        //Dictionary<int, int> cardsToDiscardTable; //Don't need?
+        int[,] bettingRangeTable; // row is rank, column is high card
         Card highCard;
         int rank;
         int safety;
@@ -32,22 +30,20 @@ namespace PokerTournament
         public Player7(int idNum, string name, int money) : base(idNum, name, money)
         {
             playerName = name;
-            //bettingRangeTable = new Dictionary<int, int[]>();
             maxRaisesTable = new Dictionary<int, int[]>();
             bettingRangeTable = new int[,]
             {
-                { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
-                { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
-                { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
-                { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
-                { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
-                { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
-                { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
-                { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
-                { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
-                { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 }
+                { 1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5 }, //high card
+                { 4, 4, 5, 5, 5, 5, 6, 6, 6, 7, 7, 7, 8 }, //two of a kind
+                { 5, 5, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 9 }, //two pair
+                { 6, 6, 7, 7, 7, 8, 8, 8, 8, 9, 9, 9, 10 }, //three of a kind
+                { 10, 10, 10, 10, 11, 11, 11, 11, 11, 11, 11, 11, 12 }, //straight
+                { 12, 12, 12, 12, 13, 13, 13, 13, 14, 14, 14, 14, 14 }, //flush
+                { 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18 }, //full house
+                { 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18 }, //four of a kind
+                { 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20 }, //straight flush
+                { 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20 }  //royal flush
             };
-            //cardsToDiscardTable = new Dictionary<int, int>();
             rank = 0;
             safety = 0;
             maxBet = 0;
@@ -56,28 +52,16 @@ namespace PokerTournament
             shouldDiscard = new bool[5];
             startMoney = this.Money;
             //Hard coded table values
-            maxRaisesTable.Add(1, new int[] { 1, 1 });
-            maxRaisesTable.Add(2, new int[] { 2, 2 });
-            maxRaisesTable.Add(3, new int[] { 3, 3 });
-            maxRaisesTable.Add(4, new int[] { 4, 4 });
-            maxRaisesTable.Add(5, new int[] { 5, 5 });
-            maxRaisesTable.Add(6, new int[] { 6, 6 });
-            maxRaisesTable.Add(7, new int[] { 70, 7 });
-            maxRaisesTable.Add(8, new int[] { 800, 8 });
-            maxRaisesTable.Add(9, new int[] { 9000, 9 });
-            maxRaisesTable.Add(10, new int[] { 10000, 10 });
-            /*
-            bettingRangeTable.Add(1, new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 });
-            bettingRangeTable.Add(2, new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 });
-            bettingRangeTable.Add(3, new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 });
-            bettingRangeTable.Add(4, new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 });
-            bettingRangeTable.Add(5, new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 });
-            bettingRangeTable.Add(6, new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 });
-            bettingRangeTable.Add(7, new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 });
-            bettingRangeTable.Add(8, new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 });
-            bettingRangeTable.Add(9, new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 });
-            bettingRangeTable.Add(10, new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 });
-            */
+            maxRaisesTable.Add(1, new int[] { 2, 2 });
+            maxRaisesTable.Add(2, new int[] { 3, 4 });
+            maxRaisesTable.Add(3, new int[] { 4, 5 });
+            maxRaisesTable.Add(4, new int[] { 5, 7 });
+            maxRaisesTable.Add(5, new int[] { 6, 9 });
+            maxRaisesTable.Add(6, new int[] { 7, 12 });
+            maxRaisesTable.Add(7, new int[] { 80, 15 });
+            maxRaisesTable.Add(8, new int[] { 900, 20 });
+            maxRaisesTable.Add(9, new int[] { 1000, 25 });
+            maxRaisesTable.Add(10, new int[] { 10000, 30 });
         }
 
         #region Custom Methods
