@@ -79,8 +79,22 @@ namespace PokerTournament
                 if (!this.Dealer)
                     return BTBet(actionPhase, currentState);
                 // Second player
+                else if (this.actions[actions.Count - 1].ActionName == "check")
+                {
+                    if (actionPhase == "Bet1")
+                        stateRound1 = States.Bet;
+                    if (actionPhase == "Bet2")
+                        stateRound2 = States.Bet;
+                    return BTBet(actionPhase, currentState);
+                }
                 else
+                {
+                    if (actionPhase == "Bet1")
+                        stateRound1 = States.RaiseCall;
+                    if (actionPhase == "Bet2")
+                        stateRound2 = States.RaiseCall;
                     return BTRaiseCall(actionPhase, currentState);
+                }
             }
             else
             {
@@ -142,6 +156,11 @@ namespace PokerTournament
 
         private PlayerAction BTBet(string actionPhase, States currentState)
         {
+            if(actionPhase == "Bet2" && Dealer)
+            {
+                stateRound2 = States.RaiseCall;
+                return BTRaiseCall(actionPhase, stateRound2);
+            }
             // CHECK TO SEE IF YOU SHOULD FOLD
             if (ShouldFold())
             {
@@ -238,47 +257,8 @@ namespace PokerTournament
                     }
 
                 }
-                /*
-                bool badStraight = false;
-                int goodStraight = 0;
-                int numEach = 0;    // compare two cards value
-                int numAll = 0;     // add up all the different between values when not fold 
-                for (int i = 0; i < hand.Length - 1; i++)
-                {
-                    numEach = hand[i + 1].Value - hand[i].Value;
-                    if (numEach > 2 && i != 0 && i != hand.Length-1) // the distance between cards are too big
-                    {
-                        badStraight = true;
-                        break;
-                    }
-                    else
-                    {
-                        numAll += numEach;  // to check the total gap amount
-                        if (numEach == 1)
-                        {
-                            ++goodStraight;
-                            shouldDiscard[i] = shouldDiscard[i + 1] = false;
-                        }
-                    }
-                }
-                if (goodStraight == 3)
-                {
-                    badStraight = false;  //One away from a straight!
-                    // Choose which card to discard
-                    if (hand[hand.Length-1].Value - hand[hand.Length - 2].Value > 2) 
-                        shouldDiscard[hand.Length-1] = true;
-                    else
-                        shouldDiscard[0] = true;
-                } */
-                    //THINK ABOUT LATER -- SUITS... WHICH SHOULD WE TRY FOR?
-                /*
-                if (numAll > 2)
-                {
-                    badStraight = true; // at least two gap between cards number                   
-                }
-                */
                 
-                if (/*badStraight == true && */sameSuitNum <= 2 /*&& highCard.Value < 8*/)
+                if (sameSuitNum <= 2 )
                 {
                     Console.WriteLine(playerName + " chose the action: Fold (Really bad hand)");
                     return true;  // REALLY BAD TO HAVE NO CLOSE STRAIGHT AND SAME SUIT
@@ -322,7 +302,7 @@ namespace PokerTournament
             this.hand = hand;
             stateRound2 = States.Evaluate;
 
-            if(actions.Count == 0)
+            if(actions.Count <= 1)
             {
                 stateRound1 = States.Evaluate;
             }
@@ -362,7 +342,7 @@ namespace PokerTournament
         public override PlayerAction BettingRound2(List<PlayerAction> actions, Card[] hand)
         {
             stateRound1 = States.Evaluate;
-            if (actions.Count == 0)
+            if (actions.Count <= 1 )
             {
                 stateRound2 = States.Evaluate;
             }
