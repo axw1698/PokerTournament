@@ -197,6 +197,7 @@ namespace PokerTournament
                     {
                         //you have raise left so Raise based on table
                         Console.WriteLine(playerName + " chose the action: Raise " + numRaise);
+                        numRaise++;
                         return new PlayerAction(this.Name, actionPhase, "raise", (maxRaisesTable[rank])[1]);
                     }
                     else //no raises left
@@ -337,6 +338,7 @@ namespace PokerTournament
                     case States.Evaluate:
                         AnalyzeHand();
                         CalculateSafetyAndMaxBet();
+                        numRaise = 0;
                         stateRound1 = States.Check;
                         break;
                     case States.Fold:
@@ -377,6 +379,7 @@ namespace PokerTournament
                         AnalyzeHand();
                         ListTheHand(this.hand);//DEBUG--REMOVE LATER//
                         CalculateSafetyAndMaxBet();
+                        numRaise = 0;
                         stateRound2 = States.Bet;
                         break;
                     case States.Fold:
