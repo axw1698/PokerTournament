@@ -1,7 +1,780 @@
 Starting round 1
 Ante for this round: 10
 Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: George Action Phase: Bet1 Action Name: check Amount: 0
+ 
+After Bet1, pot is 20
+ 
+Name: Jimmy
+Hand Rank: 1 
+Two of Spades Four of Clubs Five of Clubs Ten of Clubs King of Clubs 
+
+ 
+Name: George
+Hand Rank: 1 
+Five of Hearts Eight of Clubs Queen of Clubs King of Hearts Ace of Hearts 
+
+ 
+Betting round 2:
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 5
+ 
+Player: George Action Phase: Bet2 Action Name: bet Amount: 5
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 2
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 2
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 2
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 2
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: call Amount: 2
+ 
+After Bet2, pot is 51
+ 
+George has a better hand and wins 0
+
+After round 1, player status: 
+ Name: George Dealer: True Money: 1028
+ Name: Jimmy Dealer: False Money: 972
+ 
+Starting round 2
+Ante for this round: 10
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+After Bet1, pot is 20
+ 
+Name: George
+Hand Rank: 1 
+Five of Spades Six of Hearts Queen of Clubs King of Diamonds Ace of Diamonds 
+
+ 
+Name: Jimmy
+Hand Rank: 2 
+Four of Clubs Five of Clubs Six of Diamonds Ten of Spades Ten of Clubs 
+
+ 
+Betting round 2:
+Player: George Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 20
+ 
+George folded. Other player gets the pot of 20
+
+After round 2, player status: 
+ Name: George Dealer: False Money: 1018
+ Name: Jimmy Dealer: True Money: 982
+ 
+Starting round 3
+Ante for this round: 10
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: call Amount: 4
+ 
+After Bet1, pot is 84
+ 
+Name: Jimmy
+Hand Rank: 2 
+Five of Hearts Five of Diamonds Nine of Clubs Jack of Spades Queen of Clubs 
+
+ 
+Name: George
+Hand Rank: 2 
+Four of Hearts Four of Clubs Six of Hearts Queen of Diamonds King of Clubs 
+
+ 
+Betting round 2:
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: George Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: call Amount: 4
+ 
+After Bet2, pot is 153
+ 
+Jimmy has a better hand and wins 153
+
+After round 3, player status: 
+ Name: George Dealer: True Money: 945
+ Name: Jimmy Dealer: False Money: 1055
+ 
+Starting round 4
+Ante for this round: 10
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+After Bet1, pot is 21
+ 
+Name: George
+Hand Rank: 1 
+Five of Hearts Six of Hearts Eight of Hearts Nine of Diamonds Jack of Hearts 
+
+ 
+Name: Jimmy
+Hand Rank: 3 
+Three of Hearts Seven of Diamonds Seven of Hearts Ace of Clubs Ace of Diamonds 
+
+ 
+Betting round 2:
+Player: George Action Phase: Bet2 Action Name: bet Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 9
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 2
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 5
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 2
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 5
+ 
+Player: George Action Phase: Bet2 Action Name: call Amount: 5
+ 
+After Bet2, pot is 71
+ 
+Jimmy has a better hand and wins 71
+
+After round 4, player status: 
+ Name: George Dealer: False Money: 908
+ Name: Jimmy Dealer: True Money: 1093
+ 
+Starting round 5
+Ante for this round: 10
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 28
+ 
+George folded. Other player gets the pot of 28
+
+After round 5, player status: 
+ Name: George Dealer: True Money: 898
+ Name: Jimmy Dealer: False Money: 1103
+ 
+Starting round 6
+Ante for this round: 10
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Jimmy played a bad action of raise and forfeits the hand
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 20
+ 
+Jimmy folded. Other player gets the pot of 20
+
+After round 6, player status: 
+ Name: George Dealer: False Money: 908
+ Name: Jimmy Dealer: True Money: 1093
+ 
+Starting round 7
+Ante for this round: 10
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+George played a bad action of raise and forfeits the hand
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 20
+ 
+George folded. Other player gets the pot of 20
+
+After round 7, player status: 
+ Name: George Dealer: True Money: 898
+ Name: Jimmy Dealer: False Money: 1103
+ 
+Starting round 8
+Ante for this round: 10
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 27
+ 
+Jimmy folded. Other player gets the pot of 27
+
+After round 8, player status: 
+ Name: George Dealer: False Money: 908
+ Name: Jimmy Dealer: True Money: 1093
+ 
+Starting round 9
+Ante for this round: 10
+Betting round 1:
 Player: Jimmy Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: call Amount: 4
+ 
+After Bet1, pot is 82
+ 
+Name: Jimmy
+Hand Rank: 2 
+Six of Hearts Nine of Diamonds Jack of Spades King of Spades King of Diamonds 
+
+ 
+Name: George
+Hand Rank: 2 
+Two of Diamonds Seven of Spades Ten of Hearts Ten of Clubs Ace of Diamonds 
+
+ 
+Betting round 2:
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: George Action Phase: Bet2 Action Name: bet Amount: 8
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: call Amount: 4
+ 
+After Bet2, pot is 153
+ 
+Jimmy has a better hand and wins 153
+
+After round 9, player status: 
+ Name: George Dealer: True Money: 835
+ Name: Jimmy Dealer: False Money: 1166
+ 
+Starting round 10
+Ante for this round: 10
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 29
+ 
+Jimmy folded. Other player gets the pot of 29
+
+After round 10, player status: 
+ Name: George Dealer: False Money: 846
+ Name: Jimmy Dealer: True Money: 1156
+ 
+Starting round 11
+Ante for this round: 10
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+George played a bad action of raise and forfeits the hand
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 20
+ 
+George folded. Other player gets the pot of 20
+
+After round 11, player status: 
+ Name: George Dealer: True Money: 836
+ Name: Jimmy Dealer: False Money: 1166
+ 
+Starting round 12
+Ante for this round: 10
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 28
+ 
+Jimmy folded. Other player gets the pot of 28
+
+After round 12, player status: 
+ Name: George Dealer: False Money: 846
+ Name: Jimmy Dealer: True Money: 1156
+ 
+Starting round 13
+Ante for this round: 10
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+George played a bad action of raise and forfeits the hand
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 20
+ 
+George folded. Other player gets the pot of 20
+
+After round 13, player status: 
+ Name: George Dealer: True Money: 836
+ Name: Jimmy Dealer: False Money: 1166
+ 
+Starting round 14
+Ante for this round: 10
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Jimmy played a bad action of raise and forfeits the hand
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 20
+ 
+Jimmy folded. Other player gets the pot of 20
+
+After round 14, player status: 
+ Name: George Dealer: False Money: 846
+ Name: Jimmy Dealer: True Money: 1156
+ 
+Starting round 15
+Ante for this round: 10
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 20
+ 
+George folded. Other player gets the pot of 20
+
+After round 15, player status: 
+ Name: George Dealer: True Money: 836
+ Name: Jimmy Dealer: False Money: 1166
+ 
+Starting round 16
+Ante for this round: 10
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Jimmy played a bad action of raise and forfeits the hand
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 20
+ 
+Jimmy folded. Other player gets the pot of 20
+
+After round 16, player status: 
+ Name: George Dealer: False Money: 846
+ Name: Jimmy Dealer: True Money: 1156
+ 
+Starting round 17
+Ante for this round: 10
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 20
+ 
+George folded. Other player gets the pot of 20
+
+After round 17, player status: 
+ Name: George Dealer: True Money: 836
+ Name: Jimmy Dealer: False Money: 1166
+ 
+Starting round 18
+Ante for this round: 10
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 20
+ 
+Jimmy folded. Other player gets the pot of 20
+
+After round 18, player status: 
+ Name: George Dealer: False Money: 846
+ Name: Jimmy Dealer: True Money: 1156
+ 
+Starting round 19
+Ante for this round: 10
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 20
+ 
+George folded. Other player gets the pot of 20
+
+After round 19, player status: 
+ Name: George Dealer: True Money: 836
+ Name: Jimmy Dealer: False Money: 1166
+ 
+Starting round 20
+Ante for this round: 10
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 28
+ 
+Jimmy folded. Other player gets the pot of 28
+
+After round 20, player status: 
+ Name: George Dealer: False Money: 846
+ Name: Jimmy Dealer: True Money: 1156
+ 
+Starting round 21
+Ante for this round: 10
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: call Amount: 4
+ 
+After Bet1, pot is 82
+ 
+Name: Jimmy
+Hand Rank: 2 
+Four of Clubs Four of Diamonds Six of Diamonds Nine of Clubs Ace of Diamonds 
+
+ 
+Name: George
+Hand Rank: 7 
+Five of Clubs Five of Spades Five of Hearts Eight of Hearts Eight of Clubs 
+
+ 
+Betting round 2:
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 8
+ 
+Player: George Action Phase: Bet2 Action Name: bet Amount: 18
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 15
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 15
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 15
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: call Amount: 15
+ 
+After Bet2, pot is 240
+ 
+George has a better hand and wins 240
+
+After round 21, player status: 
+ Name: George Dealer: True Money: 970
+ Name: Jimmy Dealer: False Money: 1032
+ 
+Starting round 22
+Ante for this round: 10
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: bet Amount: 6
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: call Amount: 4
+ 
+After Bet1, pot is 80
+ 
+Name: George
+Hand Rank: 2 
+Two of Hearts Two of Diamonds Six of Hearts King of Diamonds Ace of Clubs 
+
+ 
+Name: Jimmy
+Hand Rank: 2 
+Five of Hearts Nine of Spades Nine of Hearts Jack of Spades King of Clubs 
+
+ 
+Betting round 2:
+Player: George Action Phase: Bet2 Action Name: bet Amount: 8
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: call Amount: 4
+ 
+After Bet2, pot is 150
+ 
+Jimmy has a better hand and wins 150
+
+After round 22, player status: 
+ Name: George Dealer: False Money: 891
+ Name: Jimmy Dealer: True Money: 1111
+ 
+Starting round 23
+Ante for this round: 10
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: call Amount: 4
+ 
+After Bet1, pot is 82
+ 
+Name: Jimmy
+Hand Rank: 2 
+Six of Hearts Eight of Spades Jack of Hearts Jack of Clubs Queen of Hearts 
+
+ 
+Name: George
+Hand Rank: 3 
+Five of Hearts Five of Diamonds Seven of Spades Seven of Hearts Ten of Diamonds 
+
+ 
+Betting round 2:
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: George Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 5
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 5
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 5
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: call Amount: 5
+ 
+After Bet2, pot is 157
+ 
+George has a better hand and wins 157
+
+After round 23, player status: 
+ Name: George Dealer: True Money: 973
+ Name: Jimmy Dealer: False Money: 1029
+ 
+Starting round 24
+Ante for this round: 10
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Jimmy played a bad action of raise and forfeits the hand
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 20
+ 
+Jimmy folded. Other player gets the pot of 20
+
+After round 24, player status: 
+ Name: George Dealer: False Money: 983
+ Name: Jimmy Dealer: True Money: 1019
+ 
+Starting round 25
+Ante for this round: 10
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 20
+ 
+George folded. Other player gets the pot of 20
+
+After round 25, player status: 
+ Name: George Dealer: True Money: 973
+ Name: Jimmy Dealer: False Money: 1029
+ 
+Starting round 26
+Ante for this round: 20
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 40
+ 
+Jimmy folded. Other player gets the pot of 40
+
+After round 26, player status: 
+ Name: George Dealer: False Money: 993
+ Name: Jimmy Dealer: True Money: 1009
+ 
+Starting round 27
+Ante for this round: 20
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 47
+ 
+George folded. Other player gets the pot of 47
+
+After round 27, player status: 
+ Name: George Dealer: True Money: 973
+ Name: Jimmy Dealer: False Money: 1029
+ 
+Starting round 28
+Ante for this round: 20
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Jimmy played a bad action of raise and forfeits the hand
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 40
+ 
+Jimmy folded. Other player gets the pot of 40
+
+After round 28, player status: 
+ Name: George Dealer: False Money: 993
+ Name: Jimmy Dealer: True Money: 1009
+ 
+Starting round 29
+Ante for this round: 20
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+George played a bad action of raise and forfeits the hand
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 40
+ 
+George folded. Other player gets the pot of 40
+
+After round 29, player status: 
+ Name: George Dealer: True Money: 973
+ Name: Jimmy Dealer: False Money: 1029
+ 
+Starting round 30
+Ante for this round: 20
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 40
+ 
+Jimmy folded. Other player gets the pot of 40
+
+After round 30, player status: 
+ Name: George Dealer: False Money: 993
+ Name: Jimmy Dealer: True Money: 1009
+ 
+Starting round 31
+Ante for this round: 20
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 40
+ 
+George folded. Other player gets the pot of 40
+
+After round 31, player status: 
+ Name: George Dealer: True Money: 973
+ Name: Jimmy Dealer: False Money: 1029
+ 
+Starting round 32
+Ante for this round: 20
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: bet Amount: 9
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 49
+ 
+Jimmy folded. Other player gets the pot of 49
+
+After round 32, player status: 
+ Name: George Dealer: False Money: 993
+ Name: Jimmy Dealer: True Money: 1009
+ 
+Starting round 33
+Ante for this round: 20
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: bet Amount: 8
  
 Player: George Action Phase: Bet1 Action Name: raise Amount: 5
  
@@ -19,10 +792,2095 @@ Player: George Action Phase: Bet1 Action Name: raise Amount: 5
  
 Player: Jimmy Action Phase: Bet1 Action Name: call Amount: 5
  
-After Bet1, pot is 98
+After Bet1, pot is 120
+ 
+Name: Jimmy
+Hand Rank: 3 
+Jack of Clubs Jack of Diamonds Queen of Clubs Ace of Hearts Ace of Diamonds 
+
+ 
+Name: George
+Hand Rank: 1 
+Five of Spades Six of Spades Eight of Hearts Queen of Diamonds King of Spades 
+
+ 
+Betting round 2:
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 9
+ 
+Player: George Action Phase: Bet2 Action Name: bet Amount: 5
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 5
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 2
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 5
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 2
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 5
+ 
+Player: George Action Phase: Bet2 Action Name: call Amount: 5
+ 
+After Bet2, pot is 177
+ 
+Jimmy has a better hand and wins 177
+
+After round 33, player status: 
+ Name: George Dealer: True Money: 909
+ Name: Jimmy Dealer: False Money: 1093
+ 
+Starting round 34
+Ante for this round: 20
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 47
+ 
+Jimmy folded. Other player gets the pot of 47
+
+After round 34, player status: 
+ Name: George Dealer: False Money: 929
+ Name: Jimmy Dealer: True Money: 1073
+ 
+Starting round 35
+Ante for this round: 20
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: bet Amount: 6
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: call Amount: 4
+ 
+After Bet1, pot is 100
+ 
+Name: Jimmy
+Hand Rank: 7 
+Five of Spades Five of Hearts Five of Clubs Eight of Diamonds Eight of Spades 
+
+ 
+Name: George
+Hand Rank: 1 
+Two of Hearts Three of Clubs Jack of Clubs Queen of Spades King of Spades 
+
+ 
+Betting round 2:
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 18
+ 
+Player: George Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 118
+ 
+George folded. Other player gets the pot of 118
+
+After round 35, player status: 
+ Name: George Dealer: True Money: 879
+ Name: Jimmy Dealer: False Money: 1123
+ 
+Starting round 36
+Ante for this round: 20
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Jimmy played a bad action of raise and forfeits the hand
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 40
+ 
+Jimmy folded. Other player gets the pot of 40
+
+After round 36, player status: 
+ Name: George Dealer: False Money: 899
+ Name: Jimmy Dealer: True Money: 1103
+ 
+Starting round 37
+Ante for this round: 20
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 2
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 2
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: call Amount: 4
+ 
+After Bet1, pot is 80
+ 
+Name: Jimmy
+Hand Rank: 2 
+Three of Hearts Three of Spades Four of Clubs Five of Hearts Jack of Spades 
+
+ 
+Name: George
+Hand Rank: 2 
+Two of Clubs Five of Clubs Six of Clubs Six of Hearts Queen of Diamonds 
+
+ 
+Betting round 2:
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: George Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: call Amount: 4
+ 
+After Bet2, pot is 149
+ 
+George has a better hand and wins 149
+
+After round 37, player status: 
+ Name: George Dealer: True Money: 977
+ Name: Jimmy Dealer: False Money: 1025
+ 
+Starting round 38
+Ante for this round: 20
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: bet Amount: 9
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 50
+ 
+Jimmy folded. Other player gets the pot of 50
+
+After round 38, player status: 
+ Name: George Dealer: False Money: 998
+ Name: Jimmy Dealer: True Money: 1005
+ 
+Starting round 39
+Ante for this round: 20
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 5
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 5
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 5
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 5
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: call Amount: 5
+ 
+After Bet1, pot is 120
+ 
+Name: Jimmy
+Hand Rank: 2 
+Six of Hearts Six of Clubs Nine of Diamonds Queen of Spades King of Clubs 
+
+ 
+Name: George
+Hand Rank: 2 
+Five of Hearts Six of Spades Queen of Diamonds Queen of Hearts Ace of Diamonds 
+
+ 
+Betting round 2:
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: George Action Phase: Bet2 Action Name: bet Amount: 8
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: call Amount: 4
+ 
+After Bet2, pot is 191
+ 
+George has a better hand and wins 191
+
+After round 39, player status: 
+ Name: George Dealer: True Money: 1097
+ Name: Jimmy Dealer: False Money: 906
+ 
+Starting round 40
+Ante for this round: 20
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 2
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 2
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: call Amount: 4
+ 
+After Bet1, pot is 81
+ 
+Name: George
+Hand Rank: 2 
+Three of Hearts Four of Hearts Five of Hearts Five of Clubs Jack of Diamonds 
+
+ 
+Name: Jimmy
+Hand Rank: 2 
+Three of Diamonds Six of Diamonds Six of Clubs Eight of Diamonds Ten of Diamonds 
+
+ 
+Betting round 2:
+Player: George Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 6
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: call Amount: 4
+ 
+After Bet2, pot is 148
+ 
+Jimmy has a better hand and wins 148
+
+After round 40, player status: 
+ Name: George Dealer: False Money: 1020
+ Name: Jimmy Dealer: True Money: 984
+ 
+Starting round 41
+Ante for this round: 20
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: George Action Phase: Bet1 Action Name: check Amount: 0
+ 
+After Bet1, pot is 40
  
 Name: Jimmy
 Hand Rank: 1 
-Two of Diamonds Three of Diamonds Four of Hearts Ten of Diamonds King of Hearts 
+Three of Spades Four of Spades Five of Clubs Six of Hearts Jack of Spades 
 
  
+Name: George
+Hand Rank: 2 
+Three of Hearts Seven of Hearts Eight of Diamonds Eight of Spades Queen of Hearts 
+
+ 
+Betting round 2:
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 2
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 2
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: call Amount: 4
+ 
+After Bet2, pot is 82
+ 
+George has a better hand and wins 82
+
+After round 41, player status: 
+ Name: George Dealer: True Money: 1063
+ Name: Jimmy Dealer: False Money: 941
+ 
+Starting round 42
+Ante for this round: 20
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Jimmy played a bad action of raise and forfeits the hand
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 40
+ 
+Jimmy folded. Other player gets the pot of 40
+
+After round 42, player status: 
+ Name: George Dealer: False Money: 1083
+ Name: Jimmy Dealer: True Money: 921
+ 
+Starting round 43
+Ante for this round: 20
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+George played a bad action of raise and forfeits the hand
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 40
+ 
+George folded. Other player gets the pot of 40
+
+After round 43, player status: 
+ Name: George Dealer: True Money: 1063
+ Name: Jimmy Dealer: False Money: 941
+ 
+Starting round 44
+Ante for this round: 20
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Jimmy played a bad action of raise and forfeits the hand
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 40
+ 
+Jimmy folded. Other player gets the pot of 40
+
+After round 44, player status: 
+ Name: George Dealer: False Money: 1083
+ Name: Jimmy Dealer: True Money: 921
+ 
+Starting round 45
+Ante for this round: 20
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: bet Amount: 6
+ 
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 46
+ 
+George folded. Other player gets the pot of 46
+
+After round 45, player status: 
+ Name: George Dealer: True Money: 1063
+ Name: Jimmy Dealer: False Money: 941
+ 
+Starting round 46
+Ante for this round: 20
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: bet Amount: 6
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: call Amount: 4
+ 
+After Bet1, pot is 100
+ 
+Name: George
+Hand Rank: 2 
+Two of Clubs Two of Diamonds Three of Hearts Eight of Spades Ten of Spades 
+
+ 
+Name: Jimmy
+Hand Rank: 1 
+Four of Hearts Five of Hearts Eight of Hearts Jack of Clubs Ace of Clubs 
+
+ 
+Betting round 2:
+Player: George Action Phase: Bet2 Action Name: bet Amount: 6
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 5
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 2
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 2
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: call Amount: 4
+ 
+After Bet2, pot is 148
+ 
+George has a better hand and wins 148
+
+After round 46, player status: 
+ Name: George Dealer: False Money: 1134
+ Name: Jimmy Dealer: True Money: 870
+ 
+Starting round 47
+Ante for this round: 20
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 48
+ 
+George folded. Other player gets the pot of 48
+
+After round 47, player status: 
+ Name: George Dealer: True Money: 1114
+ Name: Jimmy Dealer: False Money: 890
+ 
+Starting round 48
+Ante for this round: 20
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: call Amount: 4
+ 
+After Bet1, pot is 104
+ 
+Name: George
+Hand Rank: 2 
+Four of Hearts Eight of Spades Nine of Spades Nine of Diamonds Jack of Clubs 
+
+ 
+Name: Jimmy
+Hand Rank: 4 
+Five of Diamonds Six of Diamonds Six of Hearts Six of Spades Seven of Diamonds 
+
+ 
+Betting round 2:
+Player: George Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 8
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 7
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 7
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 7
+ 
+Player: George Action Phase: Bet2 Action Name: call Amount: 7
+ 
+After Bet2, pot is 193
+ 
+Jimmy has a better hand and wins 193
+
+After round 48, player status: 
+ Name: George Dealer: False Money: 1014
+ Name: Jimmy Dealer: True Money: 990
+ 
+Starting round 49
+Ante for this round: 20
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: call Amount: 4
+ 
+After Bet1, pot is 102
+ 
+Name: Jimmy
+Hand Rank: 2 
+Nine of Diamonds Ten of Diamonds Queen of Diamonds Queen of Hearts Ace of Hearts 
+
+ 
+Name: George
+Hand Rank: 2 
+Three of Spades Six of Hearts Six of Diamonds Seven of Clubs Jack of Hearts 
+
+ 
+Betting round 2:
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 8
+ 
+Player: George Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: call Amount: 4
+ 
+After Bet2, pot is 172
+ 
+Jimmy has a better hand and wins 172
+
+After round 49, player status: 
+ Name: George Dealer: True Money: 932
+ Name: Jimmy Dealer: False Money: 1072
+ 
+Starting round 50
+Ante for this round: 20
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 47
+ 
+Jimmy folded. Other player gets the pot of 47
+
+After round 50, player status: 
+ Name: George Dealer: False Money: 952
+ Name: Jimmy Dealer: True Money: 1052
+ 
+Starting round 51
+Ante for this round: 30
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: call Amount: 4
+ 
+After Bet1, pot is 122
+ 
+Name: Jimmy
+Hand Rank: 3 
+Six of Hearts Eight of Diamonds Eight of Clubs Jack of Spades Jack of Hearts 
+
+ 
+Name: George
+Hand Rank: 1 
+Two of Clubs Three of Hearts Eight of Spades Queen of Diamonds Ace of Diamonds 
+
+ 
+Betting round 2:
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 8
+ 
+Player: George Action Phase: Bet2 Action Name: fold Amount: 0
+ 
+After Bet2, pot is 130
+ 
+George folded. Other player gets the pot of 130
+
+After round 51, player status: 
+ Name: George Dealer: True Money: 891
+ Name: Jimmy Dealer: False Money: 1113
+ 
+Starting round 52
+Ante for this round: 30
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 5
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 5
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 5
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: call Amount: 5
+ 
+After Bet1, pot is 130
+ 
+Name: George
+Hand Rank: 3 
+Five of Hearts Five of Clubs Seven of Hearts King of Spades King of Clubs 
+
+ 
+Name: Jimmy
+Hand Rank: 2 
+Two of Spades Seven of Diamonds Ten of Diamonds Jack of Clubs Jack of Spades 
+
+ 
+Betting round 2:
+Player: George Action Phase: Bet2 Action Name: bet Amount: 8
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 5
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 5
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 5
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 5
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: call Amount: 5
+ 
+After Bet2, pot is 216
+ 
+George has a better hand and wins 216
+
+After round 52, player status: 
+ Name: George Dealer: False Money: 995
+ Name: Jimmy Dealer: True Money: 1009
+ 
+Starting round 53
+Ante for this round: 30
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: bet Amount: 11
+ 
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 71
+ 
+George folded. Other player gets the pot of 71
+
+After round 53, player status: 
+ Name: George Dealer: True Money: 965
+ Name: Jimmy Dealer: False Money: 1039
+ 
+Starting round 54
+Ante for this round: 30
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 9
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 9
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 9
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 9
+ 
+Player: George Action Phase: Bet1 Action Name: call Amount: 9
+ 
+After Bet1, pot is 172
+ 
+Name: George
+Hand Rank: 2 
+Two of Diamonds Six of Spades King of Clubs Ace of Diamonds Ace of Hearts 
+
+ 
+Name: Jimmy
+Hand Rank: 2 
+Five of Diamonds Eight of Hearts Eight of Spades Ten of Hearts Queen of Diamonds 
+
+ 
+Betting round 2:
+Player: George Action Phase: Bet2 Action Name: bet Amount: 8
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: call Amount: 4
+ 
+After Bet2, pot is 242
+ 
+George has a better hand and wins 242
+
+After round 54, player status: 
+ Name: George Dealer: False Money: 1082
+ Name: Jimmy Dealer: True Money: 922
+ 
+Starting round 55
+Ante for this round: 30
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+George played a bad action of raise and forfeits the hand
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 60
+ 
+George folded. Other player gets the pot of 60
+
+After round 55, player status: 
+ Name: George Dealer: True Money: 1052
+ Name: Jimmy Dealer: False Money: 952
+ 
+Starting round 56
+Ante for this round: 30
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 68
+ 
+Jimmy folded. Other player gets the pot of 68
+
+After round 56, player status: 
+ Name: George Dealer: False Money: 1082
+ Name: Jimmy Dealer: True Money: 922
+ 
+Starting round 57
+Ante for this round: 30
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: call Amount: 4
+ 
+After Bet1, pot is 124
+ 
+Name: Jimmy
+Hand Rank: 4 
+Four of Hearts Nine of Diamonds Ten of Clubs Ten of Diamonds Ten of Hearts 
+
+ 
+Name: George
+Hand Rank: 2 
+Three of Hearts Four of Diamonds Five of Hearts Five of Diamonds Six of Clubs 
+
+ 
+Betting round 2:
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 8
+ 
+Player: George Action Phase: Bet2 Action Name: bet Amount: 5
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 7
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 7
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 7
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 7
+ 
+Player: George Action Phase: Bet2 Action Name: call Amount: 7
+ 
+After Bet2, pot is 222
+ 
+Jimmy has a better hand and wins 222
+
+After round 57, player status: 
+ Name: George Dealer: True Money: 975
+ Name: Jimmy Dealer: False Money: 1029
+ 
+Starting round 58
+Ante for this round: 30
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+After Bet1, pot is 60
+ 
+Name: George
+Hand Rank: 1 
+Three of Spades Six of Spades Seven of Clubs Nine of Spades Queen of Clubs 
+
+ 
+Name: Jimmy
+Hand Rank: 2 
+Three of Diamonds Ten of Hearts Ten of Spades Queen of Hearts Ace of Clubs 
+
+ 
+Betting round 2:
+Player: George Action Phase: Bet2 Action Name: bet Amount: 5
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 8
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 2
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 2
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: call Amount: 4
+ 
+After Bet2, pot is 105
+ 
+Jimmy has a better hand and wins 105
+
+After round 58, player status: 
+ Name: George Dealer: False Money: 920
+ Name: Jimmy Dealer: True Money: 1084
+ 
+Starting round 59
+Ante for this round: 30
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 2
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 2
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: call Amount: 4
+ 
+After Bet1, pot is 98
+ 
+Name: Jimmy
+Hand Rank: 2 
+Seven of Clubs Jack of Spades Jack of Hearts King of Clubs Ace of Spades 
+
+ 
+Name: George
+Hand Rank: 2 
+Two of Diamonds Five of Diamonds Six of Diamonds Eight of Diamonds Eight of Hearts 
+
+ 
+Betting round 2:
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 8
+ 
+Player: George Action Phase: Bet2 Action Name: bet Amount: 6
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: call Amount: 4
+ 
+After Bet2, pot is 166
+ 
+Jimmy has a better hand and wins 166
+
+After round 59, player status: 
+ Name: George Dealer: True Money: 841
+ Name: Jimmy Dealer: False Money: 1163
+ 
+Starting round 60
+Ante for this round: 30
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Jimmy played a bad action of raise and forfeits the hand
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 60
+ 
+Jimmy folded. Other player gets the pot of 60
+
+After round 60, player status: 
+ Name: George Dealer: False Money: 871
+ Name: Jimmy Dealer: True Money: 1133
+ 
+Starting round 61
+Ante for this round: 30
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 60
+ 
+George folded. Other player gets the pot of 60
+
+After round 61, player status: 
+ Name: George Dealer: True Money: 841
+ Name: Jimmy Dealer: False Money: 1163
+ 
+Starting round 62
+Ante for this round: 30
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Jimmy played a bad action of raise and forfeits the hand
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 60
+ 
+Jimmy folded. Other player gets the pot of 60
+
+After round 62, player status: 
+ Name: George Dealer: False Money: 871
+ Name: Jimmy Dealer: True Money: 1133
+ 
+Starting round 63
+Ante for this round: 30
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 68
+ 
+George folded. Other player gets the pot of 68
+
+After round 63, player status: 
+ Name: George Dealer: True Money: 841
+ Name: Jimmy Dealer: False Money: 1163
+ 
+Starting round 64
+Ante for this round: 30
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Jimmy played a bad action of raise and forfeits the hand
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 60
+ 
+Jimmy folded. Other player gets the pot of 60
+
+After round 64, player status: 
+ Name: George Dealer: False Money: 871
+ Name: Jimmy Dealer: True Money: 1133
+ 
+Starting round 65
+Ante for this round: 30
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 60
+ 
+George folded. Other player gets the pot of 60
+
+After round 65, player status: 
+ Name: George Dealer: True Money: 841
+ Name: Jimmy Dealer: False Money: 1163
+ 
+Starting round 66
+Ante for this round: 30
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 68
+ 
+Jimmy folded. Other player gets the pot of 68
+
+After round 66, player status: 
+ Name: George Dealer: False Money: 871
+ Name: Jimmy Dealer: True Money: 1133
+ 
+Starting round 67
+Ante for this round: 30
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+George played a bad action of raise and forfeits the hand
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 60
+ 
+George folded. Other player gets the pot of 60
+
+After round 67, player status: 
+ Name: George Dealer: True Money: 841
+ Name: Jimmy Dealer: False Money: 1163
+ 
+Starting round 68
+Ante for this round: 30
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 68
+ 
+Jimmy folded. Other player gets the pot of 68
+
+After round 68, player status: 
+ Name: George Dealer: False Money: 871
+ Name: Jimmy Dealer: True Money: 1133
+ 
+Starting round 69
+Ante for this round: 30
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+George played a bad action of raise and forfeits the hand
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 60
+ 
+George folded. Other player gets the pot of 60
+
+After round 69, player status: 
+ Name: George Dealer: True Money: 841
+ Name: Jimmy Dealer: False Money: 1163
+ 
+Starting round 70
+Ante for this round: 30
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 68
+ 
+Jimmy folded. Other player gets the pot of 68
+
+After round 70, player status: 
+ Name: George Dealer: False Money: 871
+ Name: Jimmy Dealer: True Money: 1133
+ 
+Starting round 71
+Ante for this round: 30
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+George played a bad action of raise and forfeits the hand
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 60
+ 
+George folded. Other player gets the pot of 60
+
+After round 71, player status: 
+ Name: George Dealer: True Money: 841
+ Name: Jimmy Dealer: False Money: 1163
+ 
+Starting round 72
+Ante for this round: 30
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 60
+ 
+Jimmy folded. Other player gets the pot of 60
+
+After round 72, player status: 
+ Name: George Dealer: False Money: 871
+ Name: Jimmy Dealer: True Money: 1133
+ 
+Starting round 73
+Ante for this round: 30
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 60
+ 
+George folded. Other player gets the pot of 60
+
+After round 73, player status: 
+ Name: George Dealer: True Money: 841
+ Name: Jimmy Dealer: False Money: 1163
+ 
+Starting round 74
+Ante for this round: 30
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 2
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 2
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: call Amount: 4
+ 
+After Bet1, pot is 98
+ 
+Name: George
+Hand Rank: 4 
+Two of Clubs Eight of Hearts Eight of Diamonds Eight of Clubs Ten of Spades 
+
+ 
+Name: Jimmy
+Hand Rank: 2 
+Five of Clubs Nine of Hearts Nine of Clubs Queen of Clubs King of Clubs 
+
+ 
+Betting round 2:
+Player: George Action Phase: Bet2 Action Name: bet Amount: 8
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 7
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 7
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 7
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 7
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: call Amount: 7
+ 
+After Bet2, pot is 200
+ 
+George has a better hand and wins 200
+
+After round 74, player status: 
+ Name: George Dealer: False Money: 937
+ Name: Jimmy Dealer: True Money: 1067
+ 
+Starting round 75
+Ante for this round: 30
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 7
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 7
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 7
+ 
+Player: George Action Phase: Bet1 Action Name: call Amount: 7
+ 
+After Bet1, pot is 142
+ 
+Name: Jimmy
+Hand Rank: 4 
+Four of Clubs Five of Spades Five of Diamonds Five of Hearts Seven of Clubs 
+
+ 
+Name: George
+Hand Rank: 2 
+Six of Clubs Seven of Hearts Jack of Diamonds Jack of Spades King of Diamonds 
+
+ 
+Betting round 2:
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 8
+ 
+Player: George Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 7
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 7
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 7
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 7
+ 
+Player: George Action Phase: Bet2 Action Name: call Amount: 7
+ 
+After Bet2, pot is 244
+ 
+Jimmy has a better hand and wins 244
+
+After round 75, player status: 
+ Name: George Dealer: True Money: 819
+ Name: Jimmy Dealer: False Money: 1185
+ 
+Starting round 76
+Ante for this round: 30
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Jimmy played a bad action of raise and forfeits the hand
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 60
+ 
+Jimmy folded. Other player gets the pot of 60
+
+After round 76, player status: 
+ Name: George Dealer: False Money: 849
+ Name: Jimmy Dealer: True Money: 1155
+ 
+Starting round 77
+Ante for this round: 30
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+George played a bad action of raise and forfeits the hand
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 60
+ 
+George folded. Other player gets the pot of 60
+
+After round 77, player status: 
+ Name: George Dealer: True Money: 819
+ Name: Jimmy Dealer: False Money: 1185
+ 
+Starting round 78
+Ante for this round: 30
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Jimmy played a bad action of raise and forfeits the hand
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 60
+ 
+Jimmy folded. Other player gets the pot of 60
+
+After round 78, player status: 
+ Name: George Dealer: False Money: 849
+ Name: Jimmy Dealer: True Money: 1155
+ 
+Starting round 79
+Ante for this round: 30
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 60
+ 
+George folded. Other player gets the pot of 60
+
+After round 79, player status: 
+ Name: George Dealer: True Money: 819
+ Name: Jimmy Dealer: False Money: 1185
+ 
+Starting round 80
+Ante for this round: 30
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 60
+ 
+Jimmy folded. Other player gets the pot of 60
+
+After round 80, player status: 
+ Name: George Dealer: False Money: 849
+ Name: Jimmy Dealer: True Money: 1155
+ 
+Starting round 81
+Ante for this round: 30
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+George played a bad action of raise and forfeits the hand
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 60
+ 
+George folded. Other player gets the pot of 60
+
+After round 81, player status: 
+ Name: George Dealer: True Money: 819
+ Name: Jimmy Dealer: False Money: 1185
+ 
+Starting round 82
+Ante for this round: 30
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 60
+ 
+Jimmy folded. Other player gets the pot of 60
+
+After round 82, player status: 
+ Name: George Dealer: False Money: 849
+ Name: Jimmy Dealer: True Money: 1155
+ 
+Starting round 83
+Ante for this round: 30
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 60
+ 
+George folded. Other player gets the pot of 60
+
+After round 83, player status: 
+ Name: George Dealer: True Money: 819
+ Name: Jimmy Dealer: False Money: 1185
+ 
+Starting round 84
+Ante for this round: 30
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 60
+ 
+Jimmy folded. Other player gets the pot of 60
+
+After round 84, player status: 
+ Name: George Dealer: False Money: 849
+ Name: Jimmy Dealer: True Money: 1155
+ 
+Starting round 85
+Ante for this round: 30
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 60
+ 
+George folded. Other player gets the pot of 60
+
+After round 85, player status: 
+ Name: George Dealer: True Money: 819
+ Name: Jimmy Dealer: False Money: 1185
+ 
+Starting round 86
+Ante for this round: 30
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 60
+ 
+Jimmy folded. Other player gets the pot of 60
+
+After round 86, player status: 
+ Name: George Dealer: False Money: 849
+ Name: Jimmy Dealer: True Money: 1155
+ 
+Starting round 87
+Ante for this round: 30
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+George played a bad action of raise and forfeits the hand
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 60
+ 
+George folded. Other player gets the pot of 60
+
+After round 87, player status: 
+ Name: George Dealer: True Money: 819
+ Name: Jimmy Dealer: False Money: 1185
+ 
+Starting round 88
+Ante for this round: 30
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: bet Amount: 9
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 2
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 5
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 2
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 5
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: call Amount: 5
+ 
+After Bet1, pot is 106
+ 
+Name: George
+Hand Rank: 3 
+Four of Spades Jack of Spades Jack of Clubs Ace of Clubs Ace of Diamonds 
+
+ 
+Name: Jimmy
+Hand Rank: 1 
+Two of Diamonds Three of Clubs Six of Hearts Jack of Diamonds Queen of Diamonds 
+
+ 
+Betting round 2:
+Player: George Action Phase: Bet2 Action Name: bet Amount: 9
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 5
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 5
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 2
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 5
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 2
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 5
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: call Amount: 5
+ 
+After Bet2, pot is 163
+ 
+George has a better hand and wins 163
+
+After round 88, player status: 
+ Name: George Dealer: False Money: 896
+ Name: Jimmy Dealer: True Money: 1108
+ 
+Starting round 89
+Ante for this round: 30
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 67
+ 
+George folded. Other player gets the pot of 67
+
+After round 89, player status: 
+ Name: George Dealer: True Money: 866
+ Name: Jimmy Dealer: False Money: 1138
+ 
+Starting round 90
+Ante for this round: 30
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: bet Amount: 6
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: call Amount: 4
+ 
+After Bet1, pot is 120
+ 
+Name: George
+Hand Rank: 4 
+Eight of Hearts Ten of Diamonds Ten of Hearts Ten of Clubs King of Spades 
+
+ 
+Name: Jimmy
+Hand Rank: 2 
+Two of Hearts Three of Diamonds Five of Clubs Queen of Hearts Queen of Diamonds 
+
+ 
+Betting round 2:
+Player: George Action Phase: Bet2 Action Name: bet Amount: 9
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 7
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 7
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 7
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 7
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: call Amount: 7
+ 
+After Bet2, pot is 223
+ 
+George has a better hand and wins 223
+
+After round 90, player status: 
+ Name: George Dealer: False Money: 973
+ Name: Jimmy Dealer: True Money: 1031
+ 
+Starting round 91
+Ante for this round: 30
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: call Amount: 4
+ 
+After Bet1, pot is 122
+ 
+Name: Jimmy
+Hand Rank: 2 
+Four of Clubs Five of Clubs Six of Clubs Six of Diamonds Ace of Hearts 
+
+ 
+Name: George
+Hand Rank: 2 
+Eight of Hearts Ten of Clubs Ten of Spades Jack of Diamonds Ace of Spades 
+
+ 
+Betting round 2:
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 8
+ 
+Player: George Action Phase: Bet2 Action Name: bet Amount: 8
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: call Amount: 4
+ 
+After Bet2, pot is 194
+ 
+George has a better hand and wins 194
+
+After round 91, player status: 
+ Name: George Dealer: True Money: 1074
+ Name: Jimmy Dealer: False Money: 930
+ 
+Starting round 92
+Ante for this round: 30
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: check Amount: 0
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: check Amount: 0
+ 
+After Bet1, pot is 60
+ 
+Name: George
+Hand Rank: 1 
+Two of Spades Three of Spades Four of Clubs Five of Hearts Ten of Spades 
+
+ 
+Name: Jimmy
+Hand Rank: 1 
+Four of Diamonds Five of Diamonds Eight of Diamonds Jack of Hearts Ace of Diamonds 
+
+ 
+Betting round 2:
+Player: George Action Phase: Bet2 Action Name: bet Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 5
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 2
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 2
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 2
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 2
+ 
+Player: George Action Phase: Bet2 Action Name: call Amount: 2
+ 
+After Bet2, pot is 90
+ 
+Jimmy has a better hand and wins 0
+
+After round 92, player status: 
+ Name: George Dealer: False Money: 1027
+ Name: Jimmy Dealer: True Money: 977
+ 
+Starting round 93
+Ante for this round: 30
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: George Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 68
+ 
+George folded. Other player gets the pot of 68
+
+After round 93, player status: 
+ Name: George Dealer: True Money: 997
+ Name: Jimmy Dealer: False Money: 1007
+ 
+Starting round 94
+Ante for this round: 30
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: bet Amount: 8
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: call Amount: 4
+ 
+After Bet1, pot is 124
+ 
+Name: George
+Hand Rank: 2 
+Eight of Clubs Eight of Diamonds Ten of Hearts Jack of Clubs King of Hearts 
+
+ 
+Name: Jimmy
+Hand Rank: 2 
+Six of Spades Ten of Diamonds Queen of Diamonds Queen of Hearts King of Diamonds 
+
+ 
+Betting round 2:
+Player: George Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: call Amount: 4
+ 
+After Bet2, pot is 193
+ 
+Jimmy has a better hand and wins 193
+
+After round 94, player status: 
+ Name: George Dealer: False Money: 897
+ Name: Jimmy Dealer: True Money: 1107
+ 
+Starting round 95
+Ante for this round: 30
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: call Amount: 4
+ 
+After Bet1, pot is 123
+ 
+Name: Jimmy
+Hand Rank: 2 
+Three of Spades Three of Diamonds Six of Hearts Nine of Diamonds Queen of Diamonds 
+
+ 
+Name: George
+Hand Rank: 2 
+Two of Hearts Two of Spades Three of Clubs Six of Clubs Ace of Hearts 
+
+ 
+Betting round 2:
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: George Action Phase: Bet2 Action Name: bet Amount: 8
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: call Amount: 4
+ 
+After Bet2, pot is 194
+ 
+Jimmy has a better hand and wins 194
+
+After round 95, player status: 
+ Name: George Dealer: True Money: 804
+ Name: Jimmy Dealer: False Money: 1201
+ 
+Starting round 96
+Ante for this round: 30
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: fold Amount: 0
+ 
+After Bet1, pot is 67
+ 
+Jimmy folded. Other player gets the pot of 67
+
+After round 96, player status: 
+ Name: George Dealer: False Money: 834
+ Name: Jimmy Dealer: True Money: 1171
+ 
+Starting round 97
+Ante for this round: 30
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: bet Amount: 5
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: call Amount: 4
+ 
+After Bet1, pot is 118
+ 
+Name: Jimmy
+Hand Rank: 2 
+Two of Hearts Six of Clubs Six of Diamonds Nine of Diamonds Jack of Diamonds 
+
+ 
+Name: George
+Hand Rank: 2 
+Three of Spades Five of Diamonds Queen of Hearts Queen of Diamonds King of Hearts 
+
+ 
+Betting round 2:
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: George Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: call Amount: 4
+ 
+After Bet2, pot is 187
+ 
+George has a better hand and wins 187
+
+After round 97, player status: 
+ Name: George Dealer: True Money: 931
+ Name: Jimmy Dealer: False Money: 1074
+ 
+Starting round 98
+Ante for this round: 30
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: call Amount: 4
+ 
+After Bet1, pot is 123
+ 
+Name: George
+Hand Rank: 2 
+Five of Spades Eight of Diamonds Ten of Spades Ten of Diamonds Queen of Clubs 
+
+ 
+Name: Jimmy
+Hand Rank: 2 
+Four of Spades Nine of Diamonds Jack of Spades Jack of Clubs King of Clubs 
+
+ 
+Betting round 2:
+Player: George Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: call Amount: 4
+ 
+After Bet2, pot is 192
+ 
+Jimmy has a better hand and wins 192
+
+After round 98, player status: 
+ Name: George Dealer: False Money: 832
+ Name: Jimmy Dealer: True Money: 1174
+ 
+Starting round 99
+Ante for this round: 30
+Betting round 1:
+Player: Jimmy Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: call Amount: 4
+ 
+After Bet1, pot is 122
+ 
+Name: Jimmy
+Hand Rank: 2 
+Three of Spades Ten of Hearts Ten of Spades Queen of Hearts King of Hearts 
+
+ 
+Name: George
+Hand Rank: 2 
+Two of Diamonds Three of Diamonds Three of Hearts Seven of Diamonds Ace of Diamonds 
+
+ 
+Betting round 2:
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 7
+ 
+Player: George Action Phase: Bet2 Action Name: bet Amount: 8
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: call Amount: 4
+ 
+After Bet2, pot is 193
+ 
+Jimmy has a better hand and wins 193
+
+After round 99, player status: 
+ Name: George Dealer: True Money: 739
+ Name: Jimmy Dealer: False Money: 1267
+ 
+Starting round 100
+Ante for this round: 30
+Betting round 1:
+Player: George Action Phase: Bet1 Action Name: bet Amount: 7
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet1 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet1 Action Name: call Amount: 4
+ 
+After Bet1, pot is 123
+ 
+Name: George
+Hand Rank: 2 
+Two of Spades Six of Hearts King of Hearts King of Spades Ace of Hearts 
+
+ 
+Name: Jimmy
+Hand Rank: 2 
+Two of Hearts Three of Clubs Six of Spades Seven of Spades Seven of Hearts 
+
+ 
+Betting round 2:
+Player: George Action Phase: Bet2 Action Name: bet Amount: 8
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: bet Amount: 5
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: Jimmy Action Phase: Bet2 Action Name: raise Amount: 4
+ 
+Player: George Action Phase: Bet2 Action Name: call Amount: 4
+ 
+After Bet2, pot is 189
+ 
+George has a better hand and wins 189
+
+After round 100, player status: 
+ Name: George Dealer: False Money: 830
+ Name: Jimmy Dealer: True Money: 1177
+ 
+After 100 rounds:
+George has 830 credits and Jimmy has 1177credits. Jimmy is the winner!

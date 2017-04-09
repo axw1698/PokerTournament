@@ -238,6 +238,7 @@ namespace PokerTournament
                     }
 
                 }
+                /*
                 bool badStraight = false;
                 int goodStraight = 0;
                 int numEach = 0;    // compare two cards value
@@ -265,10 +266,10 @@ namespace PokerTournament
                     badStraight = false;  //One away from a straight!
                     // Choose which card to discard
                     if (hand[hand.Length-1].Value - hand[hand.Length - 2].Value > 2) 
-                        shouldDiscard[hand.Length] = true;
+                        shouldDiscard[hand.Length-1] = true;
                     else
                         shouldDiscard[0] = true;
-                }
+                } */
                     //THINK ABOUT LATER -- SUITS... WHICH SHOULD WE TRY FOR?
                 /*
                 if (numAll > 2)
@@ -276,7 +277,8 @@ namespace PokerTournament
                     badStraight = true; // at least two gap between cards number                   
                 }
                 */
-                if (badStraight == true && sameSuitNum <= 2 && highCard.Value < 8)
+                
+                if (/*badStraight == true && */sameSuitNum <= 2 /*&& highCard.Value < 8*/)
                 {
                     Console.WriteLine(playerName + " chose the action: Fold (Really bad hand)");
                     return true;  // REALLY BAD TO HAVE NO CLOSE STRAIGHT AND SAME SUIT
@@ -417,6 +419,10 @@ namespace PokerTournament
         public override PlayerAction Draw(Card[] hand)
         {
             //int[] cardDelete;
+            List<int> cardDelete = new List<int>();
+            bool[] shouldDelete = new bool[5];
+            //int cardDeleteCount = 0;
+            string deleteStr = "";
             ListTheHand(this.hand);//DEBUG--REMOVE LATER//
             // Consider high card / 1 pair case
             // Consult table to find cards to discard
@@ -424,46 +430,201 @@ namespace PokerTournament
             switch (rank)
             {
                 case 1://HIGH CARD ONLY     // add more later
-                    //cardDelete = new int[4];
-                    for (int i = 0; i < 4; ++i)
+                    int[] cardSuitNum = {0,0,0,0,0};
+                    int deleteNum = 0;
+                    bool normalDelete = true;
+                    /*for (int i = 0; i < 4; ++i)
                     {
                         hand[i] = null;
-                        //cardDelete[i] = i+1;
-                    }
-
-                    //Console.WriteLine(playerName + "Delete 4 cards"+cardDelete[0]+ ","+ cardDelete[1]+ ","+ cardDelete[2]+ ","+ cardDelete[3]);
-                    return new PlayerAction(Name, "Draw", "draw", 4);
-                case 2://ONE PAIR
-                    //cardDelete = new int[3];
-                    for (int i = 0; i < 4; ++i)
+                        cardDelete[i] = i+1;
+                    }*/
+                    // calculate how many card is each card with same suit  
+                    for (int i = 0; i < 5; i++)
                     {
-                        if (hand[i].Value != hand[i + 1].Value )
+                        for (int j = 0; j < 5; j++)
                         {
-                            hand[i] = null;
-                            //cardDelete[i] = i + 1;
+                            if (i != j)
+                            {
+                                if (hand[i].Suit == hand[j].Suit)    // all cards compare with each and other
+                                {
+                                    cardSuitNum[i]++; // add num 
+                                }
+                            }
+                        }
+                    }
+                    for(int i = 0; i < 5; i++)
+                    {
+                        if (cardSuitNum[i] >=2) 
+                        {
+                            normalDelete = false;
+                        }
+                    }
+                    if(normalDelete == true)
+                    {
+                        //  too low changce, through away first 4 cards to try better cards                  
+                        for (int i = 0; i < 4; i++)
+                        {
+                            shouldDelete[i] = true;
+                        }
+                        shouldDelete[4] = false;
+                    }else
+                    {
+                        // three same cards, through away the remain two
+                        for (int i = 0; i < 5; i++)
+                        {
+                            if (cardSuitNum[i] < 2)  // delete the value with less pair
+                            {
+                                shouldDelete[i] = true;
+                            }
                         }
                     }
 
-                    //Console.WriteLine(playerName + "Delete 3 cards" + cardDelete[0] + "," + cardDelete[1] + "," + cardDelete[2]);
-                    return new PlayerAction(Name, "Draw", "draw", 3);
-                case 3://TWO PAIR
-                    //cardDelete = new int[2];
-                    for (int i = 0; i < 5; ++i)
+                    /*
+                    for(int i = 0; i <5; i ++)
                     {
-                        if (hand[i].Value != hand[i + 1].Value)
+                        if(cardSuitNum[i] ==0)  // to check if there is a three pair and two pair
                         {
-                            if (i > 0 && hand[i].Value != hand[i - 1].Value)
+                            threeTwo = false;
+                        }
+                    }
+
+                    if (threeTwo == true)
+                    {
+                        deleteNum = 2;
+                        for (int i = 0; i < 5; i++)
+                        {
+                            if (cardSuitNum[i] == 2)  // delete the value with less pair
                             {
+                                shouldDelete[i] = true;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        deleteNum = 4;
+                        // two pair and two pair,, too low changce, through away first 4 cards to try better cards                  
+                        for(int i = 0; i <4;i++)
+                        {
+                            shouldDelete[i] = true;
+                        }
+                        shouldDelete[4] = false;
+                    }*/
+
+                    // delete the cards
+                    //cardDelete = new int[deleteNum];
+                    for (int i = 0; i < 5; i++)
+                    {
+                        if (shouldDelete[i] == true)
+                        {
+                            cardDelete.Add(i+1);
+                            hand[i] = null;
+                            //cardDelete[cardDeleteCount] = i + 1;
+                            //cardDeleteCount++;
+                        }
+                    }
+                    //if (deleteNum == 2)
+                    //{
+                    //   // Console.WriteLine(playerName + "Delete 2 cards" + cardDelete[0] + "," + cardDelete[1]);
+                    //}
+                    //else
+                    //{
+                    //    //Console.WriteLine(playerName + "Delete 4 cards" + cardDelete[0] + "," + cardDelete[1] + "," + cardDelete[2] + "," + cardDelete[3]);
+                    //}
+                    deleteStr = playerName + "Delete " + cardDelete.Count + " cards: ";
+                    for(int i =0; i < cardDelete.Count; i++)
+                    {
+                        deleteStr += cardDelete[i];
+                    }
+                    Console.WriteLine(deleteStr);
+                    return new PlayerAction(Name, "Draw", "draw", cardDelete.Count);
+
+                case 2://ONE PAIR
+                    //cardDelete = new int[3];
+                    for (int i = 1; i < 4; ++i)         //not sure
+                    {
+
+                        if(hand[i].Value == hand[i -1].Value || hand[i].Value == hand[i + 1].Value)
+                        {
+                            if(i == 1 && hand[i].Value != hand[i - 1].Value)
+                            {
+                                shouldDelete[i - 1] = true;
+
+                            }                           
+                            if (i == 3 && hand[i].Value != hand[i + 1].Value)
+                            {
+                                shouldDelete[i+1] = true;
+                            }
+
+                            shouldDelete[i] = false;
+                        }
+                        else
+                        {
+                            shouldDelete[i] = true;
+                            if(i == 1)
+                            {
+                                shouldDelete[i - 1] = true;
+                            }
+                            if(i == 3)
+                            {
+                                shouldDelete[i + 1] = true;
+                            }
+                        }
+                    }
+
+                    for(int i = 0; i < 5; i ++)
+                    {
+                        if(shouldDelete[i] == true)
+                        {
+                            cardDelete.Add(i + 1);
+                            hand[i] = null;
+                            //cardDelete[cardDeleteCount] = i+1;
+                            //cardDeleteCount++;
+                        }
+                    }
+                    deleteStr = playerName + "Delete " + cardDelete.Count + " cards: ";
+                    for (int i = 0; i < cardDelete.Count; i++)
+                    {
+                        deleteStr += cardDelete[i];
+                    }
+                    Console.WriteLine(deleteStr);
+                    return new PlayerAction(Name, "Draw", "draw", cardDelete.Count);
+                case 3://TWO PAIR
+                    //cardDelete = new int[1];
+
+                    if(hand[0].Value != hand[1].Value)
+                    {
+                        cardDelete.Add(1);
+                        hand[0] = null;
+                        //cardDelete[0] = 1;
+                    }
+                    else if (hand[3].Value != hand[4].Value)
+                    {
+                        cardDelete.Add(4);
+                        hand[4] = null;
+                        //cardDelete[0] = 5;
+                    }
+                    else
+                    {
+
+                        for (int i = 1; i < 4; ++i)         //not sure
+                        {
+                            if (hand[i].Value != hand[i - 1].Value && hand[i].Value != hand[i + 1].Value)
+                            {
+                                cardDelete.Add(i + 1);
                                 hand[i] = null;
-                                //cardDelete[i] = i + 1;
+                                //cardDelete[0] = i + 1;
                                 break;
                             }
                         }
                     }
-                    //Console.WriteLine(playerName + "Delete 2 cards" + cardDelete[0] + "," + cardDelete[1]);
-
-                    return new PlayerAction(Name, "Draw", "draw", 1);
-                    //THINK ABOUT THREE OF A KIND, FOUR, ETC
+                    deleteStr = playerName + "Delete " + cardDelete.Count + " cards: ";
+                    for (int i = 0; i < cardDelete.Count; i++)
+                    {
+                        deleteStr += cardDelete[i];
+                    }
+                    Console.WriteLine(deleteStr);
+                    return new PlayerAction(Name, "Draw", "draw", cardDelete.Count);
+                //THINK ABOUT THREE OF A KIND, FOUR, ETC
                 default: //OTHER THINGS...
                     Console.WriteLine(playerName + "Delete 0 cards");
                     return new PlayerAction(Name, "Draw", "stand pat", 0);
