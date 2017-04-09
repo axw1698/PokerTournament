@@ -107,9 +107,16 @@ namespace PokerTournament
         private PlayerAction BTBet(string actionPhase, States currentState)
         {
             // CHECK TO SEE IF YOU SHOULD FOLD
-
-            // DON'T FORGET TO UPDATE STATE
-            return new PlayerAction(this.Name, "<STUFF>", "<OTHER STUFF>", -1);
+            if (ShouldFold())
+            {
+                stateRound1 = States.Evaluate; //Go back since the round is gonna end
+                return new PlayerAction(this.Name, actionPhase, "fold", 0);
+            }
+            else
+            {
+                // DON'T FORGET TO UPDATE STATE
+                return new PlayerAction(this.Name, "<STUFF>", "<OTHER STUFF>", -1);
+            }
         }
 
         private PlayerAction BTRaiseCall(string actionPhase, States currentState)
