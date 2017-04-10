@@ -119,8 +119,6 @@ namespace PokerTournament
                         stateRound1 = States.Evaluate;
                     if (actionPhase == "Bet2")
                         stateRound2 = States.Evaluate;
-                    //currentState = States.Evaluate; //Go back since the round is gonna end
-                    // We should decided rather we should check or not 
 
                     Console.WriteLine(playerName + " chose the action: Check (Second Player)");
 
@@ -147,7 +145,6 @@ namespace PokerTournament
                             stateRound1 = States.RaiseCall;
                         if (actionPhase == "Bet2")
                             stateRound2 = States.RaiseCall;
-                        //currentState = States.RaiseCall;
                         return BTRaiseCall(actionPhase, currentState);
                     }
                 }
@@ -169,18 +166,14 @@ namespace PokerTournament
                     stateRound1 = States.Evaluate;
                 if (actionPhase == "Bet2")
                     stateRound2 = States.Evaluate;
-               // currentState = States.Evaluate;
                 return new PlayerAction(this.Name, actionPhase, "fold", 0);
             }
             else
-            {
-                // Update state ??
-                
+            {                
                 if (actionPhase == "Bet1")
                     stateRound1 = States.Fold;
                 if (actionPhase == "Bet2")
                     stateRound2 = States.Fold;
-               // currentState = States.Fold;
                 // Bet according to table
                 Console.WriteLine(playerName + " chose the action: Bet");
                 return new PlayerAction(this.Name, actionPhase, "bet", bettingRangeTable[rank - 1, this.highCard.Value - 2]); // -1 and -2 to compensate for array indices
@@ -190,12 +183,10 @@ namespace PokerTournament
         private PlayerAction BTRaiseCall(string actionPhase, States currentState)
         {
             //will return to fold logic after this logic
-            
             if (actionPhase == "Bet1")
                 stateRound1 = States.Fold;
             if (actionPhase == "Bet2")
                 stateRound2 = States.Fold;
-            //currentState = States.Fold;
 
             if(this.actions[actions.Count-1].ActionName == "raise" && currentBetPot > maxBet) //check if other opponent raised.
             {
@@ -247,15 +238,11 @@ namespace PokerTournament
                 {
                     for (int j = i + 1; j < 5; j++)
                     {
-                        //if (i != j)
-                        //{
-                            if (hand[i].Suit == hand[j].Suit)    // all cards compare with the first card
-                            {
-                                sameSuitNum++;  // if this num less  then 2 then there will be 4 suils 
-                            }
-                        //}
+                        if (hand[i].Suit == hand[j].Suit)    // all cards compare with the first card
+                        {
+                            sameSuitNum++;  // if this num less  then 2 then there will be 4 suils 
+                        }                   
                     }
-
                 }
                 
                 if (sameSuitNum <= 2 )
@@ -268,8 +255,7 @@ namespace PokerTournament
                 if (maxBet > safety)
                 {
                     Console.WriteLine(playerName + " chose the action: Fold (Max Bet is bigger then safety");
-
-                    return true; // Might need to add more later
+                    return true; 
                 }
                 return false;
             }
@@ -379,7 +365,7 @@ namespace PokerTournament
         }
 
         /// <summary>
-        /// DEBUG - DLETE THIS LATER
+        ///Code from player
         /// </summary>
         private void ListTheHand(Card[] hand)
         {
@@ -398,26 +384,20 @@ namespace PokerTournament
 
         public override PlayerAction Draw(Card[] hand)
         {
-            //int[] cardDelete;
             List<int> cardDelete = new List<int>();
             bool[] shouldDelete = new bool[5];
-            //int cardDeleteCount = 0;
             string deleteStr = "";
             ListTheHand(this.hand);//DEBUG--REMOVE LATER//
+
             // Consider high card / 1 pair case
             // Consult table to find cards to discard
             // Return basically nothing if none of those go through
             switch (rank)
             {
-                case 1://HIGH CARD ONLY     // add more later
+                case 1://HIGH CARD ONLY    
                     int[] cardSuitNum = {0,0,0,0,0};
-                    int deleteNum = 0;
                     bool normalDelete = true;
-                    /*for (int i = 0; i < 4; ++i)
-                    {
-                        hand[i] = null;
-                        cardDelete[i] = i+1;
-                    }*/
+
                     // calculate how many card is each card with same suit  
                     for (int i = 0; i < 5; i++)
                     {
@@ -441,7 +421,7 @@ namespace PokerTournament
                     }
                     if(normalDelete == true)
                     {
-                        //  too low changce, through away first 4 cards to try better cards                  
+                        //  too low chance, through away first 4 cards to try better cards                  
                         for (int i = 0; i < 4; i++)
                         {
                             shouldDelete[i] = true;
@@ -458,58 +438,16 @@ namespace PokerTournament
                             }
                         }
                     }
-
-                    /*
-                    for(int i = 0; i <5; i ++)
-                    {
-                        if(cardSuitNum[i] ==0)  // to check if there is a three pair and two pair
-                        {
-                            threeTwo = false;
-                        }
-                    }
-
-                    if (threeTwo == true)
-                    {
-                        deleteNum = 2;
-                        for (int i = 0; i < 5; i++)
-                        {
-                            if (cardSuitNum[i] == 2)  // delete the value with less pair
-                            {
-                                shouldDelete[i] = true;
-                            }
-                        }
-                    }
-                    else
-                    {
-                        deleteNum = 4;
-                        // two pair and two pair,, too low changce, through away first 4 cards to try better cards                  
-                        for(int i = 0; i <4;i++)
-                        {
-                            shouldDelete[i] = true;
-                        }
-                        shouldDelete[4] = false;
-                    }*/
-
+                    
                     // delete the cards
-                    //cardDelete = new int[deleteNum];
                     for (int i = 0; i < 5; i++)
                     {
                         if (shouldDelete[i] == true)
                         {
                             cardDelete.Add(i+1);
                             hand[i] = null;
-                            //cardDelete[cardDeleteCount] = i + 1;
-                            //cardDeleteCount++;
                         }
                     }
-                    //if (deleteNum == 2)
-                    //{
-                    //   // Console.WriteLine(playerName + "Delete 2 cards" + cardDelete[0] + "," + cardDelete[1]);
-                    //}
-                    //else
-                    //{
-                    //    //Console.WriteLine(playerName + "Delete 4 cards" + cardDelete[0] + "," + cardDelete[1] + "," + cardDelete[2] + "," + cardDelete[3]);
-                    //}
                     deleteStr = playerName + "Delete " + cardDelete.Count + " cards: ";
                     for(int i =0; i < cardDelete.Count; i++)
                     {
@@ -519,8 +457,7 @@ namespace PokerTournament
                     return new PlayerAction(Name, "Draw", "draw", cardDelete.Count);
 
                 case 2://ONE PAIR
-                    //cardDelete = new int[3];
-                    for (int i = 1; i < 4; ++i)         //not sure
+                    for (int i = 1; i < 4; ++i)         
                     {
 
                         if(hand[i].Value == hand[i -1].Value || hand[i].Value == hand[i + 1].Value)
@@ -557,8 +494,6 @@ namespace PokerTournament
                         {
                             cardDelete.Add(i + 1);
                             hand[i] = null;
-                            //cardDelete[cardDeleteCount] = i+1;
-                            //cardDeleteCount++;
                         }
                     }
                     deleteStr = playerName + "Delete " + cardDelete.Count + " cards: ";
@@ -569,30 +504,25 @@ namespace PokerTournament
                     Console.WriteLine(deleteStr);
                     return new PlayerAction(Name, "Draw", "draw", cardDelete.Count);
                 case 3://TWO PAIR
-                    //cardDelete = new int[1];
-
                     if(hand[0].Value != hand[1].Value)
                     {
                         cardDelete.Add(1);
                         hand[0] = null;
-                        //cardDelete[0] = 1;
                     }
                     else if (hand[3].Value != hand[4].Value)
                     {
                         cardDelete.Add(4);
                         hand[4] = null;
-                        //cardDelete[0] = 5;
                     }
                     else
                     {
 
-                        for (int i = 1; i < 4; ++i)         //not sure
+                        for (int i = 1; i < 4; ++i)         
                         {
                             if (hand[i].Value != hand[i - 1].Value && hand[i].Value != hand[i + 1].Value)
                             {
                                 cardDelete.Add(i + 1);
                                 hand[i] = null;
-                                //cardDelete[0] = i + 1;
                                 break;
                             }
                         }
@@ -604,7 +534,6 @@ namespace PokerTournament
                     }
                     Console.WriteLine(deleteStr);
                     return new PlayerAction(Name, "Draw", "draw", cardDelete.Count);
-                //THINK ABOUT THREE OF A KIND, FOUR, ETC
                 default: //OTHER THINGS...
                     Console.WriteLine(playerName + "Delete 0 cards");
                     return new PlayerAction(Name, "Draw", "stand pat", 0);
