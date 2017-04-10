@@ -68,12 +68,11 @@ namespace PokerTournament
         private void AnalyzeHand()
         {
             rank = Evaluate.RateAHand(this.Hand, out highCard);
-            // May implement more later if necessary
         }
 
         private PlayerAction BTCheck(string actionPhase, States currentState)
         {
-            if(rank >= 2) // May change to 3 if one pair isn't good enough?
+            if(rank >= 2) 
             {
                 // First player
                 if (!this.Dealer)
@@ -206,7 +205,7 @@ namespace PokerTournament
                     if((maxRaisesTable[rank])[0] > numRaise)
                     {
                         //you have raise left so Raise based on table
-                        Console.WriteLine(playerName + " chose the action: Raise " + numRaise);
+                        Console.WriteLine(playerName + " chose the action: Raise " );
                         numRaise++;
                         return new PlayerAction(this.Name, actionPhase, "raise", (maxRaisesTable[rank])[1]);
                     }
@@ -294,13 +293,13 @@ namespace PokerTournament
             }
             while (true) //Professor, I'm sorry
             {
-                Console.WriteLine("State1:" + stateRound1);
+                //Console.WriteLine("State1:" + stateRound1);
                 currentBetPot = 0;
                 for(int i =0; i < this.actions.Count; i++)
                 {
                     currentBetPot += this.actions[i].Amount;
                 }
-                Console.WriteLine("Current Bet pot: " + currentBetPot);
+                //Console.WriteLine("Current Bet pot: " + currentBetPot);
                 switch (stateRound1)
                 {
                     case States.Evaluate:
@@ -334,13 +333,13 @@ namespace PokerTournament
             }
             while (true)
             {
-                Console.WriteLine("State2:" + stateRound2);
+               // Console.WriteLine("State2:" + stateRound2);
                 currentBetPot = 0;
                 for (int i = 0; i < this.actions.Count; i++)
                 {
                     currentBetPot += this.actions[i].Amount;
                 }
-                Console.WriteLine("Current Bet pot: " + currentBetPot);
+               // Console.WriteLine("Current Bet pot: " + currentBetPot);
                 switch (stateRound2)
                 {
                     case States.Evaluate:
@@ -384,6 +383,8 @@ namespace PokerTournament
 
         public override PlayerAction Draw(Card[] hand)
         {
+            Console.WriteLine("Card Replacement");
+
             List<int> cardDelete = new List<int>();
             bool[] shouldDelete = new bool[5];
             string deleteStr = "";
@@ -448,11 +449,13 @@ namespace PokerTournament
                             hand[i] = null;
                         }
                     }
-                    deleteStr = playerName + "Delete " + cardDelete.Count + " cards: ";
-                    for(int i =0; i < cardDelete.Count; i++)
+                    deleteStr = playerName + " delete " + cardDelete.Count + " cards: ";
+                    for(int i =0; i < cardDelete.Count-1; i++)
                     {
-                        deleteStr += cardDelete[i];
+                        deleteStr += cardDelete[i] +", ";
                     }
+                    deleteStr += cardDelete[cardDelete.Count-1];
+
                     Console.WriteLine(deleteStr);
                     return new PlayerAction(Name, "Draw", "draw", cardDelete.Count);
 
@@ -496,11 +499,12 @@ namespace PokerTournament
                             hand[i] = null;
                         }
                     }
-                    deleteStr = playerName + "Delete " + cardDelete.Count + " cards: ";
-                    for (int i = 0; i < cardDelete.Count; i++)
+                    deleteStr = playerName + " delete " + cardDelete.Count + " cards: ";
+                    for (int i = 0; i < cardDelete.Count - 1; i++)
                     {
-                        deleteStr += cardDelete[i];
+                        deleteStr += cardDelete[i] + ", ";
                     }
+                    deleteStr += cardDelete[cardDelete.Count - 1];
                     Console.WriteLine(deleteStr);
                     return new PlayerAction(Name, "Draw", "draw", cardDelete.Count);
                 case 3://TWO PAIR
@@ -527,11 +531,12 @@ namespace PokerTournament
                             }
                         }
                     }
-                    deleteStr = playerName + "Delete " + cardDelete.Count + " cards: ";
-                    for (int i = 0; i < cardDelete.Count; i++)
+                    deleteStr = playerName + " delete " + cardDelete.Count + " cards: ";
+                    for (int i = 0; i < cardDelete.Count - 1; i++)
                     {
-                        deleteStr += cardDelete[i];
+                        deleteStr += cardDelete[i] + ", ";
                     }
+                    deleteStr += cardDelete[cardDelete.Count - 1];
                     Console.WriteLine(deleteStr);
                     return new PlayerAction(Name, "Draw", "draw", cardDelete.Count);
                 default: //OTHER THINGS...
